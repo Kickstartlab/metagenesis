@@ -21,6 +21,16 @@ import Cab from '../assets/Cab.png';
 import card from '../assets/card.png';
 import side from '../assets/side.png';
 import say from '../assets/say.png';
+import app_1 from '../assets/app_1.png';
+import app_2 from '../assets/app_2.png';
+import app_3 from '../assets/app_3.png';
+import app_4 from '../assets/app_4.png';
+import Ok from '../assets/Ok.png';
+import service from '../assets/service.png';
+import explore from '../assets/explore.png';
+import star_1 from '../assets/star_1.png';
+
+
 
 
 export default function Home() {
@@ -30,89 +40,118 @@ export default function Home() {
 
             {/* top section */}
 
-            <div className="md:px-20 px-5">
-                <div className='container mx-auto'>
-                    <Menu />
+            <div className="lg:px-20 px-5 container mx-auto">
+                <Menu />
 
-                    <div className="lg:flex block justify-between items-center py-12">
-                        <div className="">
-                            <h2 className='md:text-6xl text-3xl font-volkhov font-bold text-black-100'>
-                                No Credit Card?
-                            </h2>
-                            <h2 className='md:text-6xl text-3xl font-volkhov font-bold text-black-100'>
-                                No Problem!
-                            </h2>
+                <div className="lg:flex block justify-between items-center py-12">
+                    <div className="">
+                        <h2 className='md:text-6xl text-3xl font-volkhov font-bold text-black-100'>
+                            No Credit Card?
+                        </h2>
+                        <h2 className='md:text-6xl text-3xl font-volkhov font-bold text-black-100'>
+                            No Problem!
+                        </h2>
 
-                            <p className='pt-3 pb-4 leading-loose font-poppins'>Book your favorite services from us using your<br></br>
-                                very own crypto wallet. </p>
+                        <p className='pt-3 pb-4 leading-loose font-poppins'>Book your favorite services from us using your<br></br>
+                            very own crypto wallet. </p>
 
-                            <div className="button font-poppins">
-                                <a href="/">
-                                    <button className="border-2 text-seagreen-200 font-poppins hover:text-white-100 border-seagreen-200 hover:bg-seagreen-200 py-2 px-8 rounded-sm font-semibold">
-                                        Discover Now
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div className="img md:mt-0 mt-12" style={{ backgroundImage: `url(${Vector} )`, backgroundRepeat: 'no-repeat', backgroundPosition: "top", backgroundSize: 'contain' }}>
-                            <img src={top} alt="Logo" />;
+                        <div className="button font-poppins">
+                            <a href="/">
+                                <button className="border-2 text-seagreen-200 font-poppins hover:text-white-100 border-seagreen-200 hover:bg-seagreen-200 py-2 px-8 rounded-sm font-semibold">
+                                    Discover Now
+                                </button>
+                            </a>
                         </div>
                     </div>
 
+                    <div className="img md:mt-0 mt-12 font-poppins" style={{ backgroundImage: `url(${Vector} )`, backgroundRepeat: 'no-repeat', backgroundPosition: "top", backgroundSize: 'contain' }}>
+                        <img src={top} alt="Logo" />
 
-                    <div className="bg-black-900 rounded-md p-3 my-5 mx-auto">
-                        <div className="md:flex block items-center justify-between">
-                            <div className="grid grid-cols-3 lg:grid-cols-7 items-center gap-12">
-                                <div className="">
-                                    <img src={Plane} alt="" />
-                                    <p className="text-seagreen-200 font-poppins">Flights</p>
+                        
+                        <div className='lg:flex hidden gap-3 p-5 bg-white-100 rounded-lg w-42 font-semibold absolute top-32'>
+                            <img src={service} alt="" />
+                            <div className="text-sm text-black-50">
+                                Best <br></br>Services
+                            </div>
+                        </div>
+                        <div className='lg:flex hidden gap-3 p-5 bg-white-100 rounded-lg w-42 absolute top-1/2 right-12'>
+                            <img src={explore} alt="" className='' />
+                            <div>
+                                <div className="text-md text-black-50 font-semibold">
+                                    Explore
                                 </div>
 
-                                <div className="">
-                                    <img src={Hotel} alt="" />
-                                    <p className="text-seagreen-200 font-poppins">Hotel</p>
-                                </div>
-
-                                <div className="">
-                                    <img src={Cab} alt="" />
-                                    <p className="text-seagreen-200 font-poppins">Taxi</p>
-                                </div>
-
-                                <div className="">
-                                    <img src={disco} alt="" />
-                                    <p className="text-seagreen-200 font-poppins">CLubs</p>
-                                </div>
-
-                                <div className="">
-                                    <img src={food} alt="" />
-                                    <p className="text-seagreen-200 font-poppins">Food</p>
-                                </div>
-
-                                <div className="">
-                                    <img src={shop} alt="" />
-                                    <p className="text-seagreen-200 font-poppins">Shopping</p>
-                                </div>
-
-                                <div className="">
-                                    <img src={withdraw} alt="" />
-                                    <p className="text-seagreen-200 font-poppins">Withdrawl</p>
+                                <div className="text-sm text-black-50">
+                                    Every cornar of the<br></br> world with us
                                 </div>
                             </div>
+                        </div>
+                        <div className='lg:flex hidden gap-3 p-5 bg-white-100 rounded-lg w-42 absolute bottom-32'>
+                            <img src={star_1} alt="" />
+                            <div>
+                                <div className="text-md text-black-50 font-semibold">
+                                    5 star
+                                </div>
 
-                            <p className="text-seagreen-200 text-lg font-poppins md:mt-0 mt-4">& more...</p>
-
-                            <div className="button md:mt-0 mt-4">
-                                <a href="contact.html">
-                                    <button className="bg-seagreen-200 hover:bg-black-900 hover:text-seagreen-200 hover:border-2 hover:border-seagreen-200 text-black-100 py-3 px-8 rounded-md font-poppins font-semibold">
-                                        Explore Now
-                                    </button>
-                                </a>
+                                <div className="text-sm text-black-50">
+                                    Customer Reviewd
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+
+                <div className="bg-black-900 rounded-md p-3 my-5 mx-auto">
+                    <div className="md:flex block items-center justify-between">
+                        <div className="grid grid-cols-3 lg:grid-cols-7 items-center gap-12">
+                            <div className="">
+                                <img src={Plane} alt="" />
+                                <p className="text-seagreen-200 font-poppins">Flights</p>
+                            </div>
+
+                            <div className="">
+                                <img src={Hotel} alt="" />
+                                <p className="text-seagreen-200 font-poppins">Hotel</p>
+                            </div>
+
+                            <div className="">
+                                <img src={Cab} alt="" />
+                                <p className="text-seagreen-200 font-poppins">Taxi</p>
+                            </div>
+
+                            <div className="">
+                                <img src={disco} alt="" />
+                                <p className="text-seagreen-200 font-poppins">CLubs</p>
+                            </div>
+
+                            <div className="">
+                                <img src={food} alt="" />
+                                <p className="text-seagreen-200 font-poppins">Food</p>
+                            </div>
+
+                            <div className="">
+                                <img src={shop} alt="" />
+                                <p className="text-seagreen-200 font-poppins">Shopping</p>
+                            </div>
+
+                            <div className="">
+                                <img src={withdraw} alt="" />
+                                <p className="text-seagreen-200 font-poppins">Withdrawl</p>
+                            </div>
+                        </div>
+
+                        <p className="text-seagreen-200 text-lg font-poppins md:mt-0 mt-4">& more...</p>
+
+                        <div className="button md:mt-0 mt-4">
+                            <a href="contact.html">
+                                <button className="bg-seagreen-200 hover:bg-black-900 hover:text-seagreen-200 hover:border-2 hover:border-seagreen-200 text-black-100 py-3 px-8 rounded-md font-poppins font-semibold">
+                                    Explore Now
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             {/* section blue */}
@@ -125,31 +164,32 @@ export default function Home() {
                     <div className="py-20 lg:px-20 px-5 container mx-auto">
                         <div className="text-center" style={{ backgroundImage: `url(${side} )`, backgroundRepeat: 'no-repeat', backgroundPosition: "right" }}>
                             <h3 className="text-white-100 text-center text-4xl font-bold font-volkhov">Why choose us? </h3>
-                            <p className="py-4 leading-loose font-poppins text-white-100">lorem ipsumlorem ipsumlorem ipsumlorem<br></br> ipsumlorem ipsumlorem ipsum</p>
+                            <p className="py-4 leading-loose font-poppins text-white-100">Our Platform  will connect your wallet with it our space. Now, you will be live in the space.<br></br> In this space, you have the ability to buy any sort of specialty. And our most prominent feature, flight booking and rental properties.</p>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 text-poppins">
+                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8 text-poppins">
                             <div className="col-span-1">
                                 <div className="bg-white-100 p-8 rounded-md">
                                     <img src={reason_1} alt="" />
-                                    <h4 className='text-lg font-bold pb-3 pt-6'>Lorem Impsum</h4>
-                                    <p className="text-black-50">lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                                    <h4 className='text-lg font-bold pb-3 pt-6'>Spend Crypto Online</h4>
+                                    <p className="text-black-50">You can easily pay for hotels and rentals through CryptoLiving platform. All you have to is swipe your Virtual visa card.
+                                    </p>
                                 </div>
                             </div>
 
                             <div className="col-span-1">
                                 <div className="bg-white-100 p-8 rounded-md">
                                     <img src={reason_2} alt="" />
-                                    <h4 className='text-lg font-bold pb-3 pt-6 '>Lorem Impsum</h4>
-                                    <p className="text-black-50">lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                                    <h4 className='text-lg font-bold pb-3 pt-6'>Secure payments</h4>
+                                    <p className="text-black-50 pb-5">Crypto Living brings you Secure and safe payment plan. </p>
                                 </div>
                             </div>
 
                             <div className="col-span-1">
                                 <div className="bg-white-100 p-8 rounded-md">
                                     <img src={reason_3} alt="" />
-                                    <h4 className='text-lg font-bold pb-3 pt-6'>Lorem Impsum</h4>
-                                    <p className="text-black-50">lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                                    <h4 className='text-lg font-bold pb-3 pt-6'>Globally available</h4>
+                                    <p className="text-black-50">Move around the world with Crypto Living. You can go anywhere in the world by paying crypto.</p>
                                 </div>
                             </div>
                         </div>
@@ -161,9 +201,8 @@ export default function Home() {
                         <div className="container mx-auto">
 
                             <div className="text-center py-8">
-                                <h3 className="text-white-100 text-center text-3xl md:text-6xl font-bold font-poppins">We got your back!</h3>
-                                <p className="py-4 leading-loose font-poppins text-white-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc<br></br> vulputate libero et velit interdum,
-                                    ac aliquet odio mattis. Class aptent taciti sociosqu ad litora</p>
+                                <h3 className="text-white-100 text-center text-3xl md:text-6xl font-bold font-poppins">Virtual Visa Card</h3>
+                                <p className="py-4 leading-loose font-poppins text-white-100 flex mx-auto lg:w-1/2 w-full">Crypto Living offers you virtual visa card. You don't have to keep cash or credit card anymore. CryptoLiving offering you world first  crypto visa card. Where you can buy anything without any worries.  Now crypto holders don't have to keep cash anymore.</p>
                             </div>
 
                             <div className="py-8">
@@ -177,12 +216,12 @@ export default function Home() {
 
                     <div className="pb-12 pt-16" style={{ backgroundImage: `url(${Vector_2} )`, backgroundRepeat: 'no-repeat', backgroundPosition: "top", backgroundSize: 'contain' }}>
 
-                    <div className='pb-16' style={{ backgroundImage: `url(${mosq})`, backgroundPosition: "bottom", backgroundRepeat: 'no-repeat' }}>
-                        
-                        <div className="text-center py-8 container mx-auto">
-                            <h3 className="text-seagreen-200 text-center text-4xl font-bold font-volkhov">deals & discounts</h3>
-                            <p className="py-4 leading-loose font-poppins text-white-100">Discover our fantastic early booking discounts<br></br> & start planning your journey.</p>
-                        </div>
+                        <div className='pb-16' style={{ backgroundImage: `url(${mosq})`, backgroundPosition: "bottom", backgroundRepeat: 'no-repeat' }}>
+
+                            <div className="text-center py-8 container mx-auto">
+                                <h3 className="text-seagreen-200 text-center text-4xl font-bold font-volkhov">deals & discounts</h3>
+                                <p className="py-4 leading-loose font-poppins text-white-100">Discover our fantastic early booking discounts<br></br> & start planning your journey.</p>
+                            </div>
 
                             <div className="container mx-auto">
                                 <Slider />
@@ -193,45 +232,70 @@ export default function Home() {
 
                     {/* about us */}
 
-                    <div className="pb-20 lg:px-20 px-5" style={{ backgroundImage: `url(${say} )`, backgroundRepeat: 'no-repeat', backgroundPosition: "top right" }}>
+                    <div id='about' className="pb-20 lg:px-20 px-5 container mx-auto" style={{ backgroundImage: `url(${say} )`, backgroundRepeat: 'no-repeat', backgroundPosition: "top right" }}>
 
-                        <div className="lg:flex block justify-between items center pb-8">
+                        <div className="lg:flex block justify-between items-center gap-8 pb-8">
 
                             <div className="lg:w-1/2 w-full">
-                                <h3 className="text-white-100 md:text-4xl text-2xl font-bold font-volkhov ">What people say</h3>
-                                <h3 className="text-seagreen-100 md:text-4xl text-2xl font-bold font-volkhov pt-1 ">about us</h3>
-                                <p className="py-4 leading-loose font-poppins text-white-100">Our Clients send us bunch of smilies with our services<br></br> and we love them.</p>
 
-                                <div className="flex gap-6">
-                                    <div className="bg-white-100 hover:bg-seagreen-100 rounded-full p-2">
-
-                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.292892 8.70711C-0.0976315 8.31658 -0.0976315 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM17 9H1V7H17V9Z" fill="#999999" />
-                                        </svg>
-
-                                    </div>
-
-                                    <div className="bg-white-100 hover:bg-seagreen-100 rounded-full p-2">
-
-
-                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="#999999" />
-                                        </svg>
-
-
-                                    </div>
-                                </div>
+                                <h3 className="text-seagreen-100 md:text-4xl text-2xl font-bold font-volkhov pt-1 ">About us</h3>
+                                <p className="py-4 leading-loose font-poppins text-white-100">
+                                    In crypto living, we want you to move forward with a new concept. As you might be aware with non-fungible token (NFT) and metaverse, we would like to introduce some aspects for you.  We believe in that universe, you need to have some luxuries with you and then you can progress authentically. For instance, in crypto living, we are introducing visa card that can help you buy boarding tickets and rental properties. You see it is new. If you have a wallet on any exchange, you just have to link it with the website, transfer your dues immediately and then can buy the property using our website server. The transaction will be smooth and steady, and in no time, you can have a property at your name.</p>
                             </div>
 
                             <div className="lg:w-1/2 block mt-8 md:mt-0">
                                 <img src={client} alt="" />
 
                                 <div className="bg-white-100 p-8 rounded-md -mt-5 md:ml-5 ml-0">
-                                    <p className=' font-poppins text-black-100'>“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
+                                    <p className=' font-poppins text-black-100'>“As crypto person it's my responsibility to save other people from this cash hassle. World is advancing towards Metaverse and  other big things. So, I give my community cash freedom with this platform. Now they can use crypto in their life ”</p>
 
-                                    <h4 className='font-bold text-lg text-black-100 pt-5'>Mike Taylor</h4>
-                                    <p className=' font-poppins text-black-100'>Lahore, Pakistan</p>
+                                    <h4 className='font-bold text-lg text-black-100 pt-5'>Marco Shelby</h4>
+                                    <p className=' font-poppins text-black-100'>Dubai, UAE</p>
                                 </div>
+                            </div>
+                        </div>
+
+                        {/* get app section */}
+
+                        <div className="pt-12 md:pb-20 pb-0">
+                            <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center gap-6">
+                                <div className="border-4 border-seagreen-200 rounded-xl p-5 flex flex-col items-center">
+                                    <img src={Ok} alt="" className='w-16' />
+                                    <p className="py-4 leading-loose font-poppins text-white-100">
+                                        Worldwide Available
+                                    </p>
+                                </div>
+                                <div className="border-4 border-seagreen-200 rounded-xl p-5 flex flex-col items-center">
+                                    <img src={Ok} alt="" className='w-16' />
+                                    <p className="py-4 leading-loose font-poppins text-white-100">
+                                        Instant Transaction
+                                    </p>
+                                </div>
+                                <div className="border-4 border-seagreen-200 rounded-xl p-5 flex flex-col items-center">
+                                    <img src={Ok} alt="" className='w-16' />
+                                    <p className="py-4 leading-loose font-poppins text-white-100">
+                                        Mobile application
+                                    </p>
+                                </div>
+                                <div className="border-4 border-seagreen-200 rounded-xl p-5 flex flex-col items-center">
+                                    <img src={Ok} alt="" className='w-16' />
+                                    <p className="py-4 leading-loose font-poppins text-white-100">
+                                        Pay  Crypto
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+
+                            <h3 className="text-white-100 text-center text-4xl font-bold font-volkhov">Get the App Today! </h3>
+
+                            <div className="flex gap-6 items-center justify-center pt-8 pb-6">
+                                <img src={app_1} alt="" className='w-16' />
+                                <img src={app_2} alt="" className='w-16' />
+                                <img src={app_3} alt="" className='w-16' />
+                                <img src={app_4} alt="" className='w-16' />
+
                             </div>
                         </div>
 
@@ -243,7 +307,7 @@ export default function Home() {
                             </div>
                             <div className="lg:flex hidden justify-center items-center mt-8">
                                 <div className="relative text-poppins">
-                                    <div className="absolute top-5 left-3"> <i className="fa fa-envelope z-20 text-black-50"></i> </div> <input type="email" className="lg:h-16 h-12 lg:w-96 w-full pl-10 pr-20 rounded-lg z-0 focus:shadow focus:outline-none" placeholder="Enter Your Email" />
+                                    <input type="email" className="lg:h-16 h-12 lg:w-96 w-full pl-5 pr-20 rounded-lg z-0 focus:shadow focus:outline-none" placeholder="Enter Your Email" />
                                     <div className="absolute top-2 right-2"> <button className="p-3 text-white-100 rounded-lg bg-seagreen-200">Connect!</button> </div>
                                 </div>
                             </div>
