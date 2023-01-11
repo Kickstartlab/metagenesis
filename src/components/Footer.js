@@ -9,7 +9,8 @@ export default function Footer() {
       <footer className='container text-white-100 mx-auto lg:px-12 font-poppins px-5'>
         <div className="grid grid-cols-1 lg:grid-cols-5 md:grid-cols-3 items-baseline place-items-start gap-12 font-poppins py-8">
           <div className="md:col-span-2 col-span-1">
-            <a href="/" className="logo">
+          
+            <a href="/" className="logo lg:pt-8">
               <img src={logo} alt="Logo" />
             </a>
             <p className='py-5 leading-loose'>Adipiscing at in tellus integer. Pellentesque massa placerat duis ultricies lacus. Nisi porta lorem mollis aliquam ut porttitor</p>

@@ -11,7 +11,7 @@ export default function Menu() {
   return (
 
     <header>
-      <div className="lg:flex hidden items-center justify-between font-poppins text-white-100 h-20">
+      <div className="lg:flex hidden items-center justify-between font-poppins  text-white-100 h-28">
         <a href="/" className="logo">
           <img src={logo} alt="Logo" />
         </a>
@@ -32,35 +32,31 @@ export default function Menu() {
         </a>
 
         <button onClick={() => setShow(!show)} className="nav cursor-pointer">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6  text-white-100">
             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
           </svg>
         </button>
       </div>
 
-      {show ? <div className="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-3/4 overflow-y-auto text-center font-poppins font-semibold bg-seagreen-100 z-20" style={{ left: "0" }}>
-        <div className="text-gray-100 text-xl">
-          <div className="p-2.5 mt-1 flex items-center">
+      {show ? <div className="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-3/4 overflow-y-auto text-center font-orbitron font-semibold bg-gradient-to-tr from-purple-100 to-purple-200 z-20" style={{ left: "0" }}>
+    
+          <div className="mt-3 px-3 mb-12">
             <a href="/" className="logo w-1/2">
               <img src={logo} alt="Logo" />
             </a>
           </div>
-        </div>
-        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md transition duration-500 cursor-pointer hover:bg-zinc-700 text-white">
-          <Link to="/" className="text-lg ml-4 text-gray-200 font-semibold">Home</Link>
+        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md transition duration-500 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
+          <Link to="/" className="text-lg ml-4 hover:bg-white-100 hover:text-purple-100 font-semibold">Home</Link>
         </button>
-        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-zinc-700 text-white">
-          <Link to="/about" className="text-lg ml-4 text-gray-200 font-semibold">About</Link>
+        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
+          <Link to="/about" className="text-lg ml-4 hover:bg-white-100 hover:text-purple-100 font-semibold">About</Link>
         </button>
-        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-zinc-700 text-white">
-          <Link to="/destination" className="text-lg ml-4 text-gray-200 font-semibold">Destination</Link>
+        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
+          <Link to="/destination" className="text-lg ml-4 hover:bg-white-100 hover:text-purple-100 font-semibold">Destination</Link>
         </button>
-        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
-          <Link to="/contact" className="text-lg ml-4 text-gray-200 font-semibold">Service</Link>
+        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
+          <Link to="/contact" className="text-lg ml-4 hover:bg-white-100 hover:text-purple-100 font-semibold">Service</Link>
         </button>
-        <div className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
-          <a href={require("../assets/whitepapper.pdf")} download="Whitepaper" className="text-lg ml-4 text-gray-200 font-semibold">Whitepaper</a>
-        </div>
       </div> : null
       }
 

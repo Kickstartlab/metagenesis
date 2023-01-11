@@ -1,3 +1,7 @@
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif;
+}
+
 .bg-top {
   background-image: url(../src/assets/bg-top.png);
   background-position: center;
@@ -23,13 +27,14 @@
   background: linear-gradient(97.16deg, #F86CF8 12.04%, #64CEF5 81.84%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
 }
 
 .border-gradient {
-  border: 2px solid;
-  border-image-source: linear-gradient(97.16deg, #D10ED1 12.04%, #10A3DA 81.84%);
+  box-sizing: content-box;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(97.16deg, #D10ED1 12.04%, #10A3DA 81.84%);
+  border-image-slice: 1;
 }
 
 .slick-slide {
