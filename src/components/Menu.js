@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import logo from '../assets/logo.png';
-// import {
-//   BrowserRouter as Router,
-//   Link
-// } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 
 
 export default function Menu() {
@@ -20,17 +18,16 @@ export default function Menu() {
 
         <nav>
           <ul className="text-md flex justify-center gap-8 items-center">
-            <li><a href="/" className="text-zinc-100">Home</a></li>
-            <li><a href="#about" className="hover:text-seagreen-100">About</a></li>
-            <li><a href="/" className="hover:text-seagreen-100">Destination</a></li>
-            <li><a href="/contact" className="hover:text-seagreen-100">Services</a></li>
-            <li><a href="/" className="hover:text-seagreen-100">Blog</a></li>
+            <li><Link to="/" className="text-zinc-100">Home</Link></li>
+            <li><Link to="/about" className="hover:text-seagreen-100 cursor-pointer">About</Link></li>
+            <li><Link to="/destination" className="hover:text-seagreen-100 cursor-pointer">Destination</Link></li>
+            <li><Link to="/contact" className="hover:text-seagreen-100 cursor-pointer">Services</Link></li>
           </ul>
         </nav>
 
         <div className="">
           <a href={require("../assets/whitepapper.pdf")} download="Whitepaper">
-            <button className="bg-seagreen-100 hover:bg-seagreen-50 hover:border-2 hover:border-seagreen-100 hover:text-seagreen-100 text-black-100 py-2 px-8 rounded-sm font-semibold">
+            <button className="bg-seagreen-100 hover:bg-seagreen-50 hover:border-2 hover:border-seagreen-100 hover:text-seagreen-100 cursor-pointer text-black-100 py-2 px-8 rounded-sm font-semibold">
               Whitepaper
             </button>
           </a>
@@ -38,7 +35,7 @@ export default function Menu() {
       </div>
 
       <div className="lg:hidden flex items-center justify-between pt-5 font-nutino-sans">
-        <a href="index.html" className="logo w-1/2">
+        <a href="/" className="logo w-1/2">
           <img src={logo} alt="Logo" />
         </a>
 
@@ -52,26 +49,26 @@ export default function Menu() {
       {show ? <div className="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-3/4 overflow-y-auto text-center font-poppins font-semibold bg-seagreen-100 z-20" style={{ left: "0" }}>
         <div className="text-gray-100 text-xl">
           <div className="p-2.5 mt-1 flex items-center">
-            <a href="index.html" className="logo w-1/2">
+            <a href="/" className="logo w-1/2">
               <img src={logo} alt="Logo" />
             </a>
           </div>
         </div>
-        <div className="py-2.5 mt-3 flex items-center rounded-md transition duration-500 cursor-pointer hover:bg-zinc-700 text-white">
-          <a href="/" className="text-lg ml-4 text-gray-200 font-semibold">Home</a>
-        </div>
-        <div className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-zinc-700 text-white">
-          <a href="#about" className="text-lg ml-4 text-gray-200 font-semibold">About</a>
-        </div>
-        <div className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-zinc-700 text-white">
-          <a href="/" className="text-lg ml-4 text-gray-200 font-semibold">Destination</a>
-        </div>
-        <div className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
-          <a href="/" className="text-lg ml-4 text-gray-200 font-semibold">Service</a>
-        </div>
-        <div className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
-          <a href="/" className="text-lg ml-4 text-gray-200 font-semibold">Blog</a>
-        </div>
+        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md transition duration-500 cursor-pointer hover:bg-zinc-700 text-white">
+          <Link to="/" className="text-lg ml-4 text-gray-200 font-semibold">Home</Link>
+        </button>
+        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-zinc-700 text-white">
+          <Link to="/about" className="text-lg ml-4 text-gray-200 font-semibold">About</Link>
+        </button>
+        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-zinc-700 text-white">
+          <Link to="/destination" className="text-lg ml-4 text-gray-200 font-semibold">Destination</Link>
+        </button>
+        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
+          <Link to="/contact" className="text-lg ml-4 text-gray-200 font-semibold">Service</Link>
+        </button>
+        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
+          <Link to="/blog" className="text-lg ml-4 text-gray-200 font-semibold">Blog</Link>
+        </button>
         <div className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
           <a href={require("../assets/whitepapper.pdf")} download="Whitepaper" className="text-lg ml-4 text-gray-200 font-semibold">Whitepaper</a>
         </div>

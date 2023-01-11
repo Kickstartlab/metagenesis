@@ -29,8 +29,8 @@ import Ok from '../assets/Ok.png';
 import service from '../assets/service.png';
 import explore from '../assets/explore.png';
 import star_1 from '../assets/star_1.png';
-
-
+import Particle from './Particle';
+import { Link } from "react-router-dom";
 
 
 export default function Home() {
@@ -40,9 +40,9 @@ export default function Home() {
 
             {/* top section */}
 
-            <div className="lg:px-20 px-5 container mx-auto">
+            <div className="lg:px-20 px-5 container mx-auto relative z-20">
                 <Menu />
-
+                <Particle />
                 <div className="lg:flex block justify-between items-center py-12">
                     <div className="">
                         <h2 className='md:text-6xl text-3xl font-volkhov font-bold text-black-100'>
@@ -56,18 +56,18 @@ export default function Home() {
                             very own crypto wallet. </p>
 
                         <div className="button font-poppins">
-                            <a href="/">
+                            <Link to="/contact">
                                 <button className="border-2 text-seagreen-200 font-poppins hover:text-white-100 border-seagreen-200 hover:bg-seagreen-200 py-2 px-8 rounded-sm font-semibold">
                                     Discover Now
                                 </button>
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
                     <div className="img md:mt-0 mt-12 font-poppins" style={{ backgroundImage: `url(${Vector} )`, backgroundRepeat: 'no-repeat', backgroundPosition: "top", backgroundSize: 'contain' }}>
                         <img src={top} alt="Logo" />
 
-                        
+
                         <div className='lg:flex hidden gap-3 p-5 bg-white-100 rounded-lg w-42 font-semibold absolute top-32'>
                             <img src={service} alt="" />
                             <div className="text-sm text-black-50">
