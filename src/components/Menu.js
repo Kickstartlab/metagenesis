@@ -11,7 +11,7 @@ export default function Menu() {
   return (
 
     <header>
-      <div className="lg:flex hidden items-center justify-between font-poppins text-black-100 h-20">
+      <div className="lg:flex hidden items-center justify-between font-poppins text-white-100 h-20">
         <a href="/" className="logo">
           <img src={logo} alt="Logo" />
         </a>
@@ -19,19 +19,11 @@ export default function Menu() {
         <nav>
           <ul className="text-md flex justify-center gap-8 items-center">
             <li><Link to="/" className="text-zinc-100">Home</Link></li>
-            <li><Link to="/about" className="hover:text-seagreen-100 cursor-pointer">About</Link></li>
-            <li><Link to="/destination" className="hover:text-seagreen-100 cursor-pointer">Destination</Link></li>
-            <li><Link to="/contact" className="hover:text-seagreen-100 cursor-pointer">Services</Link></li>
+            <li><Link to="/about" className="hover:text-seagreen-100 cursor-pointer">Resources</Link></li>
+            <li><Link to="/destination" className="hover:text-seagreen-100 cursor-pointer">Pricing</Link></li>
+            <li><Link to="/about" className="hover:text-seagreen-100 cursor-pointer">About Us</Link></li>
           </ul>
         </nav>
-
-        <div className="">
-          <a href={require("../assets/whitepapper.pdf")} download="Whitepaper">
-            <button className="bg-seagreen-100 hover:bg-seagreen-50 hover:border-2 hover:border-seagreen-100 hover:text-seagreen-100 cursor-pointer text-black-100 py-2 px-8 rounded-sm font-semibold">
-              Whitepaper
-            </button>
-          </a>
-        </div>
       </div>
 
       <div className="lg:hidden flex items-center justify-between pt-5 font-nutino-sans">
@@ -65,9 +57,6 @@ export default function Menu() {
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
           <Link to="/contact" className="text-lg ml-4 text-gray-200 font-semibold">Service</Link>
-        </button>
-        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
-          <Link to="/blog" className="text-lg ml-4 text-gray-200 font-semibold">Blog</Link>
         </button>
         <div className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
           <a href={require("../assets/whitepapper.pdf")} download="Whitepaper" className="text-lg ml-4 text-gray-200 font-semibold">Whitepaper</a>

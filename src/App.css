@@ -1,24 +1,41 @@
-.bg-img{
-  background-image: url(../src/assets/box.png);
+.bg-top {
+  background-image: url(../src/assets/bg-top.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-#tsparticles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  padding: 0;
-  margin: 0;
-  z-index: -1;
+.bg-side {
+  background-image: url(../src/assets/side.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-side-2 {
+  background-image: url(../src/assets/side-2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.colo-gradient {
+  background: linear-gradient(97.16deg, #F86CF8 12.04%, #64CEF5 81.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.border-gradient {
+  border: 2px solid;
+  border-image-source: linear-gradient(97.16deg, #D10ED1 12.04%, #10A3DA 81.84%);
 }
 
 .slick-slide {
   padding: 20px;
 }
+
 .slick-list {
   padding: -20px;
 }

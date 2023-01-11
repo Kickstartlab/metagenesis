@@ -4,15 +4,11 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      seagreen: {
-        "50": "#F5F9FF",
-        "100": "#03E6B6",
-        "200": "#00CEEA",
+      blue: {
+        "100": "#090823",
       },
       black: {
-        "50": "#666",
-        "100": "#222",
-        "900": "#181F2B",
+        "100": "#010208",
       },
       white: {
         "100": "#fff",
@@ -22,9 +18,13 @@ module.exports = {
         "100": "#FFE7DB",
         "200": "#FA7436"
       },
+      purple: {
+        "100": "#D10ED1",
+        "200": "#10A3DA"
+      },
     },
     fontFamily: {
-      'volkhov': ["'Volkhov', serif;"],
+      'orbitron': ["'Orbitron', sans-serif;"],
       'poppins': ["'Poppins', sans-serif;"],
     }
   },

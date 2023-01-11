@@ -1,5 +1,5 @@
 import React from 'react'
-import FooterWhite from './FooterWhite'
+import Footer from './Footer'
 import Menu from './Menu'
 
 function Destination() {
@@ -21,7 +21,7 @@ function Destination() {
 
       </div>
 
-      <FooterWhite />
+      <Footer/>
     </div>
   )
 }

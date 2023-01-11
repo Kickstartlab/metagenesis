@@ -1,12 +1,12 @@
 import React from 'react'
 import Footer from './Footer'
-import MenuWhite from './MenuWhite'
+import Menu from './Menu'
 
 function Contact() {
     return (
         <div className="bg-black-900">
             <div className="lg:px-20 px-5 container mx-auto">
-                <MenuWhite />
+                <Menu />
 
                 <div className="my-12">
                     <div className="my-12 sm:flex block items-center gap-x-6 font-poppins">

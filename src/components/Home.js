@@ -1,323 +1,429 @@
 import React from 'react'
 import Footer from './Footer'
 import Menu from './Menu'
-import Slider from './Slider'
 import top from '../assets/top.png';
-import reason_1 from '../assets/reason_1.png';
-import reason_2 from '../assets/reason_2.png';
-import reason_3 from '../assets/reason_3.png';
-import bg_blue from '../assets/bg_blue.png';
-import mosq from '../assets/mosq.png';
-import Vector_2 from '../assets/Vector_2.png';
-import Vector from '../assets/Vector.png';
-import disco from '../assets/disco.png';
-import food from '../assets/food.png';
-import shop from '../assets/shop.png';
-import withdraw from '../assets/withdraw.png';
-import client from '../assets/client.png';
-import Plane from '../assets/Plane.png';
-import Hotel from '../assets/Hotel.png';
-import Cab from '../assets/Cab.png';
-import card from '../assets/card.png';
-import side from '../assets/side.png';
-import say from '../assets/say.png';
-import app_1 from '../assets/app_1.png';
-import app_2 from '../assets/app_2.png';
-import app_3 from '../assets/app_3.png';
-import app_4 from '../assets/app_4.png';
-import Ok from '../assets/Ok.png';
-import service from '../assets/service.png';
-import explore from '../assets/explore.png';
-import star_1 from '../assets/star_1.png';
-import Particle from './Particle';
+import meta from '../assets/meta.png';
+import star from '../assets/star.png';
+import globe from '../assets/globe.png';
+import meta_1 from '../assets/meta-1.png';
+import meta_2 from '../assets/meta-2.png';
+import metaverse from '../assets/metaverse.png';
+import ai from '../assets/ai.png';
+import nft from '../assets/nft.png';
+import work_1 from '../assets/work-1.png';
+import work_2 from '../assets/work-2.png';
+import work_3 from '../assets/work-3.png';
+import work_4 from '../assets/work-4.png';
+import work_5 from '../assets/work-5.png';
+import work_6 from '../assets/work-6.png';
+import fashion from '../assets/fashion.png';
 import { Link } from "react-router-dom";
 
 
 export default function Home() {
 
     return (
-        <div className="bg-seagreen-50">
+        <div className="bg-black-100">
 
             {/* top section */}
 
-            <div className="lg:px-20 px-5 container mx-auto relative z-20">
-                <Menu />
-                <Particle />
-                <div className="lg:flex block justify-between items-center py-12">
-                    <div className="">
-                        <h2 className='md:text-6xl text-3xl font-volkhov font-bold text-black-100'>
-                            No Credit Card?
-                        </h2>
-                        <h2 className='md:text-6xl text-3xl font-volkhov font-bold text-black-100'>
-                            No Problem!
-                        </h2>
+            <div className="lg:px-20 px-5 bg-top">
 
-                        <p className='pt-3 pb-4 leading-loose font-poppins'>Book your favorite services from us using your<br></br>
-                            very own crypto wallet. </p>
+                <div className='container mx-auto'>
 
-                        <div className="button font-poppins">
-                            <Link to="/contact">
-                                <button className="border-2 text-seagreen-200 font-poppins hover:text-white-100 border-seagreen-200 hover:bg-seagreen-200 py-2 px-8 rounded-sm font-semibold">
-                                    Discover Now
-                                </button>
-                            </Link>
-                        </div>
-                    </div>
+                    <Menu />
+                    <div className="lg:flex block justify-between items-center py-12">
+                        <div className="lg:w-1/2 w-full">
+                            <h2 className='md:text-5xl text-3xl font-orbitron font-semibold text-white-100'>
+                                Bringing you connections & experiences out of this
+                            </h2>
+                            <h2 className='md:text-6xl text-3xl font-orbitron font-semibold text-black-100'>
+                                No Problem!
+                            </h2>
 
-                    <div className="img md:mt-0 mt-12 font-poppins" style={{ backgroundImage: `url(${Vector} )`, backgroundRepeat: 'no-repeat', backgroundPosition: "top", backgroundSize: 'contain' }}>
-                        <img src={top} alt="Logo" />
+                            <p className='pt-3 pb-4 leading-loose font-poppins'>Book your favorite services from us using your<br></br>
+                                very own crypto wallet. </p>
 
-
-                        <div className='lg:flex hidden gap-3 p-5 bg-white-100 rounded-lg w-42 font-semibold absolute top-32'>
-                            <img src={service} alt="" />
-                            <div className="text-sm text-black-50">
-                                Best <br></br>Services
-                            </div>
-                        </div>
-                        <div className='lg:flex hidden gap-3 p-5 bg-white-100 rounded-lg w-42 absolute top-1/2 right-12'>
-                            <img src={explore} alt="" className='' />
-                            <div>
-                                <div className="text-md text-black-50 font-semibold">
-                                    Explore
-                                </div>
-
-                                <div className="text-sm text-black-50">
-                                    Every cornar of the<br></br> world with us
-                                </div>
-                            </div>
-                        </div>
-                        <div className='lg:flex hidden gap-3 p-5 bg-white-100 rounded-lg w-42 absolute bottom-32'>
-                            <img src={star_1} alt="" />
-                            <div>
-                                <div className="text-md text-black-50 font-semibold">
-                                    5 star
-                                </div>
-
-                                <div className="text-sm text-black-50">
-                                    Customer Reviewd
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div className="bg-black-900 rounded-md p-3 my-5 mx-auto">
-                    <div className="md:flex block items-center justify-between">
-                        <div className="grid grid-cols-3 lg:grid-cols-7 items-center gap-12">
-                            <div className="">
-                                <img src={Plane} alt="" />
-                                <p className="text-seagreen-200 font-poppins">Flights</p>
-                            </div>
-
-                            <div className="">
-                                <img src={Hotel} alt="" />
-                                <p className="text-seagreen-200 font-poppins">Hotel</p>
-                            </div>
-
-                            <div className="">
-                                <img src={Cab} alt="" />
-                                <p className="text-seagreen-200 font-poppins">Taxi</p>
-                            </div>
-
-                            <div className="">
-                                <img src={disco} alt="" />
-                                <p className="text-seagreen-200 font-poppins">CLubs</p>
-                            </div>
-
-                            <div className="">
-                                <img src={food} alt="" />
-                                <p className="text-seagreen-200 font-poppins">Food</p>
-                            </div>
-
-                            <div className="">
-                                <img src={shop} alt="" />
-                                <p className="text-seagreen-200 font-poppins">Shopping</p>
-                            </div>
-
-                            <div className="">
-                                <img src={withdraw} alt="" />
-                                <p className="text-seagreen-200 font-poppins">Withdrawl</p>
+                            <div className="button font-poppins">
+                                <Link to="/contact">
+                                    <button className="border-gradient py-2 px-8 rounded-sm font-semibold">
+                                        Discover Now
+                                    </button>
+                                </Link>
                             </div>
                         </div>
 
-                        <p className="text-seagreen-200 text-lg font-poppins md:mt-0 mt-4">& more...</p>
-
-                        <div className="button md:mt-0 mt-4">
-                            <a href="contact.html">
-                                <button className="bg-seagreen-200 hover:bg-black-900 hover:text-seagreen-200 hover:border-2 hover:border-seagreen-200 text-black-100 py-3 px-8 rounded-md font-poppins font-semibold">
-                                    Explore Now
-                                </button>
-                            </a>
+                        <div className="img md:mt-0 mt-12 font-poppins">
+                            <img src={top} alt="Logo" />
+                            <img src={star} alt="Logo" className='absolute top-40 mt-16' />
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* section blue */}
-            <div className="bg-black-900">
+            {/* what is meta genesis */}
 
-                <div className="">
-
-                    {/* why choose us */}
-
-                    <div className="py-20 lg:px-20 px-5 container mx-auto">
-                        <div className="text-center" style={{ backgroundImage: `url(${side} )`, backgroundRepeat: 'no-repeat', backgroundPosition: "right" }}>
-                            <h3 className="text-white-100 text-center text-4xl font-bold font-volkhov">Why choose us? </h3>
-                            <p className="py-4 leading-loose font-poppins text-white-100">Our Platform  will connect your wallet with it our space. Now, you will be live in the space.<br></br> In this space, you have the ability to buy any sort of specialty. And our most prominent feature, flight booking and rental properties.</p>
+            <div className="bg-side">
+                <div className="py-12 lg:px-16 px-5 container mx-auto">
+                    <div className="lg:flex block justify-between items-center py-12">
+                        <div className="lg:w-1/2 w-full">
+                            <img src={meta} alt="Logo" />
                         </div>
 
-                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8 text-poppins">
-                            <div className="col-span-1">
-                                <div className="bg-white-100 p-8 rounded-md">
-                                    <img src={reason_1} alt="" />
-                                    <h4 className='text-lg font-bold pb-3 pt-6'>Spend Crypto Online</h4>
-                                    <p className="text-black-50">You can easily pay for hotels and rentals through CryptoLiving platform. All you have to is swipe your Virtual visa card.
-                                    </p>
-                                </div>
-                            </div>
+                        <div className='lg:w-1/3 w-full text-white-100'>
+                            <h2 className='md:text-5xl text-3xl font-orbitron font-semibold'>
+                                What is META GENESIS
+                            </h2>
 
-                            <div className="col-span-1">
-                                <div className="bg-white-100 p-8 rounded-md">
-                                    <img src={reason_2} alt="" />
-                                    <h4 className='text-lg font-bold pb-3 pt-6'>Secure payments</h4>
-                                    <p className="text-black-50 pb-5">Crypto Living brings you Secure and safe payment plan. </p>
-                                </div>
-                            </div>
+                            <p className='py-5 font-poppins'>
+                                Adipiscing at in tellus integer. Pellentesque massa placerat duis ultricies lacus. Nisi porta lorem mollis aliquam ut porttitor leo. Venenatis cras..</p>
 
-                            <div className="col-span-1">
-                                <div className="bg-white-100 p-8 rounded-md">
-                                    <img src={reason_3} alt="" />
-                                    <h4 className='text-lg font-bold pb-3 pt-6'>Globally available</h4>
-                                    <p className="text-black-50">Move around the world with Crypto Living. You can go anywhere in the world by paying crypto.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* we got your back */}
-
-                    <div className="py-16 bg-img">
-                        <div className="container mx-auto">
-
-                            <div className="text-center py-8">
-                                <h3 className="text-white-100 text-center text-3xl md:text-6xl font-bold font-poppins">Virtual Visa Card</h3>
-                                <p className="py-4 leading-loose font-poppins text-white-100 flex mx-auto lg:w-1/2 w-full">Crypto Living offers you virtual visa card. You don't have to keep cash or credit card anymore. CryptoLiving offering you world first  crypto visa card. Where you can buy anything without any worries.  Now crypto holders don't have to keep cash anymore.</p>
-                            </div>
-
-                            <div className="py-8">
-                                <img src={card} alt="" className='lg:w-1/2 w-full flex mx-auto' />
+                            <div className="button font-poppins">
+                                <Link to="/contact">
+                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-8 rounded-sm font-semibold mt-5">
+                                        Know More
+                                    </button>
+                                </Link>
                             </div>
                         </div>
 
                     </div>
+                </div>
+            </div>
 
-                    {/* deals and discounts */}
+            {/* what is meta genesis */}
 
-                    <div className="pb-12 pt-16" style={{ backgroundImage: `url(${Vector_2} )`, backgroundRepeat: 'no-repeat', backgroundPosition: "top", backgroundSize: 'contain' }}>
+            <div className="bg-side-2">
+                <div className="py-12    lg:px-20 px-5 container mx-auto">
+                    <div className="lg:flex block justify-between items-center py-12">
 
-                        <div className='pb-16' style={{ backgroundImage: `url(${mosq})`, backgroundPosition: "bottom", backgroundRepeat: 'no-repeat' }}>
+                        <div className='lg:w-1/2 w-full text-white-100'>
+                            <h2 className='md:text-5xl text-3xl font-orbitron font-semibold'>
+                                META GENESIS Infrastructure
+                                for billions of users.
+                            </h2>
 
-                            <div className="text-center py-8 container mx-auto">
-                                <h3 className="text-seagreen-200 text-center text-4xl font-bold font-volkhov">deals & discounts</h3>
-                                <p className="py-4 leading-loose font-poppins text-white-100">Discover our fantastic early booking discounts<br></br> & start planning your journey.</p>
+                            <p className='py-5 font-poppins'>
+                                a blockchain infrastructure and robust DApps platform custom-built for the Metaverse. Broadly Adopted by major institutions, local governments, and global brands.</p>
+
+                            <div className="flex gap-6 items-center font-poppins flex-wrap">
+                                <Link to="/contact">
+                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-5 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
+                                        Know More
+                                        <span><svg width="12" height="13" viewBox="0 0 12 13" class="mt-1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 1.5C2 0.947715 2.44772 0.5 3 0.5L11 0.500001C11.5523 0.500001 12 0.947716 12 1.5V9.5C12 10.0523 11.5523 10.5 11 10.5C10.4477 10.5 10 10.0523 10 9.5V3.91421L1.70711 12.2071C1.31658 12.5976 0.683417 12.5976 0.292893 12.2071C-0.0976311 11.8166 -0.0976311 11.1834 0.292893 10.7929L8.58579 2.5L3 2.5C2.44772 2.5 2 2.05228 2 1.5Z" fill="#fff"></path>
+                                        </svg>
+                                        </span>
+                                    </button>
+                                </Link>
+
+                                <Link to="/contact">
+                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-5 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
+                                        Know More
+                                        <span><svg width="12" height="13" viewBox="0 0 12 13" class="mt-1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 1.5C2 0.947715 2.44772 0.5 3 0.5L11 0.500001C11.5523 0.500001 12 0.947716 12 1.5V9.5C12 10.0523 11.5523 10.5 11 10.5C10.4477 10.5 10 10.0523 10 9.5V3.91421L1.70711 12.2071C1.31658 12.5976 0.683417 12.5976 0.292893 12.2071C-0.0976311 11.8166 -0.0976311 11.1834 0.292893 10.7929L8.58579 2.5L3 2.5C2.44772 2.5 2 2.05228 2 1.5Z" fill="#fff"></path>
+                                        </svg>
+                                        </span>
+                                    </button>
+                                </Link>
+
+                                <Link to="/contact">
+                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-5 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
+                                        Know More
+                                        <span><svg width="12" height="13" viewBox="0 0 12 13" class="mt-1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 1.5C2 0.947715 2.44772 0.5 3 0.5L11 0.500001C11.5523 0.500001 12 0.947716 12 1.5V9.5C12 10.0523 11.5523 10.5 11 10.5C10.4477 10.5 10 10.0523 10 9.5V3.91421L1.70711 12.2071C1.31658 12.5976 0.683417 12.5976 0.292893 12.2071C-0.0976311 11.8166 -0.0976311 11.1834 0.292893 10.7929L8.58579 2.5L3 2.5C2.44772 2.5 2 2.05228 2 1.5Z" fill="#fff"></path>
+                                        </svg>
+                                        </span>
+                                    </button>
+                                </Link>
                             </div>
+                        </div>
 
-                            <div className="container mx-auto">
-                                <Slider />
-                            </div>
-
+                        <div className="lg:w-1/3 w-full">
+                            <img src={globe} alt="Logo" />
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    {/* about us */}
+            {/* metaverse section */}
 
-                    <div id='about' className="pb-20 lg:px-20 px-5 container mx-auto" style={{ backgroundImage: `url(${say} )`, backgroundRepeat: 'no-repeat', backgroundPosition: "top right" }}>
+            <div className="py-16">
+                <div className="container mx-auto">
 
-                        <div className="lg:flex block justify-between items-center gap-8 pb-8">
+                    <div className="lg:flex block items-center">
 
-                            <div className="lg:w-1/2 w-full">
-
-                                <h3 className="text-seagreen-100 md:text-4xl text-2xl font-bold font-volkhov pt-1 ">About us</h3>
-                                <p className="py-4 leading-loose font-poppins text-white-100">
-                                    In crypto living, we want you to move forward with a new concept. As you might be aware with non-fungible token (NFT) and metaverse, we would like to introduce some aspects for you.  We believe in that universe, you need to have some luxuries with you and then you can progress authentically. For instance, in crypto living, we are introducing visa card that can help you buy boarding tickets and rental properties. You see it is new. If you have a wallet on any exchange, you just have to link it with the website, transfer your dues immediately and then can buy the property using our website server. The transaction will be smooth and steady, and in no time, you can have a property at your name.</p>
-                            </div>
-
-                            <div className="lg:w-1/2 block mt-8 md:mt-0">
-                                <img src={client} alt="" />
-
-                                <div className="bg-white-100 p-8 rounded-md -mt-5 md:ml-5 ml-0">
-                                    <p className=' font-poppins text-black-100'>“As crypto person it's my responsibility to save other people from this cash hassle. World is advancing towards Metaverse and  other big things. So, I give my community cash freedom with this platform. Now they can use crypto in their life ”</p>
-
-                                    <h4 className='font-bold text-lg text-black-100 pt-5'>Marco Shelby</h4>
-                                    <p className=' font-poppins text-black-100'>Dubai, UAE</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* get app section */}
-
-                        <div className="pt-12 md:pb-20 pb-0">
-                            <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center gap-6">
-                                <div className="border-4 border-seagreen-200 rounded-xl p-5 flex flex-col items-center">
-                                    <img src={Ok} alt="" className='w-16' />
-                                    <p className="py-4 leading-loose font-poppins text-white-100">
-                                        Worldwide Available
-                                    </p>
-                                </div>
-                                <div className="border-4 border-seagreen-200 rounded-xl p-5 flex flex-col items-center">
-                                    <img src={Ok} alt="" className='w-16' />
-                                    <p className="py-4 leading-loose font-poppins text-white-100">
-                                        Instant Transaction
-                                    </p>
-                                </div>
-                                <div className="border-4 border-seagreen-200 rounded-xl p-5 flex flex-col items-center">
-                                    <img src={Ok} alt="" className='w-16' />
-                                    <p className="py-4 leading-loose font-poppins text-white-100">
-                                        Mobile application
-                                    </p>
-                                </div>
-                                <div className="border-4 border-seagreen-200 rounded-xl p-5 flex flex-col items-center">
-                                    <img src={Ok} alt="" className='w-16' />
-                                    <p className="py-4 leading-loose font-poppins text-white-100">
-                                        Pay  Crypto
-                                    </p>
-                                </div>
-                            </div>
+                        <div>
+                            <img src={metaverse} alt="" />
                         </div>
 
                         <div>
+                            <div className="text-center py-8">
+                                <h3 className="text-white-100 text-center text-3xl md:text-6xl font-bold font-orbitron">METAVERSE </h3>
 
-                            <h3 className="text-white-100 text-center text-4xl font-bold font-volkhov">Get the App Today! </h3>
-
-                            <div className="flex gap-6 items-center justify-center pt-8 pb-6">
-                                <img src={app_1} alt="" className='w-16' />
-                                <img src={app_2} alt="" className='w-16' />
-                                <img src={app_3} alt="" className='w-16' />
-                                <img src={app_4} alt="" className='w-16' />
-
+                                <p className="py-4 leading-loose font-poppins text-white-100 flex mx-auto lg:w-1/2 w-full">
+                                    a blockchain infrastructure and robust DApps platform custom-built for the Metaverse. Broadly Adopted by major institutions, local governments, and global brands.
+                                </p>
                             </div>
-                        </div>
 
-                        {/* get in touch */}
-
-                        <div className="mt-12 p-8 md:p-16 bg-seagreen-200 rounded-md" style={{ backgroundImage: `url(${bg_blue})`, backgroundSize: 'cover' }}>
-                            <div className="">
-                                <h3 className="text-white-100 md:text-4xl text-2xl font-bold font-volkhov text-center">Get in touch to learn<br></br> more and find insiders<br></br> discounts!</h3>
-                            </div>
-                            <div className="lg:flex hidden justify-center items-center mt-8">
-                                <div className="relative text-poppins">
-                                    <input type="email" className="lg:h-16 h-12 lg:w-96 w-full pl-5 pr-20 rounded-lg z-0 focus:shadow focus:outline-none" placeholder="Enter Your Email" />
-                                    <div className="absolute top-2 right-2"> <button className="p-3 text-white-100 rounded-lg bg-seagreen-200">Connect!</button> </div>
-                                </div>
+                            <div className="flex items-center justify-center gap-3 py-8">
+                                <img src={meta_1} alt="" />
+                                <img src={meta_2} alt="" />
                             </div>
                         </div>
                     </div>
 
                 </div>
 
-                <Footer />
             </div>
+
+            {/* deals and discounts */}
+
+            <div className="bg-side">
+                <div className="pb-12 lg:px-16 px-5 container mx-auto">
+                    <div className="lg:flex block justify-between items-center py-12">
+                        <div className="lg:w-1/2 w-full">
+                            <img src={ai} alt="Logo" />
+                        </div>
+
+                        <div className='lg:w-1/2 w-full text-white-100 float-right'>
+                            <h2 className='md:text-5xl text-3xl font-orbitron font-semibold'>
+                                META GENESIS AI
+                            </h2>
+
+                            <p className='py-5 font-poppins'>
+                                a blockchain infrastructure and robust DApps platform custom-built for the Metaverse. Broadly Adopted by major institutions, local governments, and global brands.
+                            </p>
+
+                            <div className="button font-poppins">
+                                <Link to="/contact">
+                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-5 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
+                                        Learn More
+                                        <span><svg width="12" height="13" viewBox="0 0 12 13" class="mt-1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 1.5C2 0.947715 2.44772 0.5 3 0.5L11 0.500001C11.5523 0.500001 12 0.947716 12 1.5V9.5C12 10.0523 11.5523 10.5 11 10.5C10.4477 10.5 10 10.0523 10 9.5V3.91421L1.70711 12.2071C1.31658 12.5976 0.683417 12.5976 0.292893 12.2071C-0.0976311 11.8166 -0.0976311 11.1834 0.292893 10.7929L8.58579 2.5L3 2.5C2.44772 2.5 2 2.05228 2 1.5Z" fill="#fff"></path>
+                                        </svg>
+                                        </span>
+                                    </button>
+                                </Link>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            {/*  META GENESIS NFT’s */}
+
+            <div className="pb-16">
+                <div className="container mx-auto">
+
+                    <h3 className="text-white-100 text-center text-3xl md:text-6xl font-bold font-orbitron color-gradient">
+                        META GENESIS NFT’s
+                    </h3>
+
+                    <p className="py-4 leading-loose font-poppins text-white-100 flex mx-auto lg:w-1/2 w-full">
+                        a blockchain infrastructure and robust DApps platform custom-built for the Metaverse. Broadly Adopted by major institutions, local governments, and global brands.
+                    </p>
+
+                    <Link to="/contact">
+                        <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-5 flex gap-x-3 mx-auto items-center rounded-sm font-semibold mt-5">
+                            Know More
+                            <span><svg width="12" height="13" viewBox="0 0 12 13" class="mt-1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 1.5C2 0.947715 2.44772 0.5 3 0.5L11 0.500001C11.5523 0.500001 12 0.947716 12 1.5V9.5C12 10.0523 11.5523 10.5 11 10.5C10.4477 10.5 10 10.0523 10 9.5V3.91421L1.70711 12.2071C1.31658 12.5976 0.683417 12.5976 0.292893 12.2071C-0.0976311 11.8166 -0.0976311 11.1834 0.292893 10.7929L8.58579 2.5L3 2.5C2.44772 2.5 2 2.05228 2 1.5Z" fill="#fff"></path>
+                            </svg>
+                            </span>
+                        </button>
+                    </Link>
+                </div>
+
+                <div className="flex items-center justify-center gap-3 py-8">
+                    <img src={nft} alt="" />
+                </div>
+            </div>
+
+            {/* how it works */}
+
+            <div className="pb-16 px-12">
+                <div className="container mx-auto">
+
+                    <div className="text-center py-8">
+                        <h3 className="text-white-100 text-center text-3xl md:text-6xl font-bold font-orbitron color-gradient">
+                            How does the Meta Genesis work
+                        </h3>
+
+                        <p className="py-4 leading-loose font-poppins text-white-100 flex mx-auto lg:w-1/2 w-full">
+                            Adipiscing at in tellus integer. Pellentesque massa placerat duis ultricies. Venenatis cras
+                        </p>
+                    </div>
+
+                    <div className="grid grid-rows-2 lg:grid-cols-3 grid-cols-1 gap-6 text-white-100 place-content-center place-items-center">
+
+                        <div className="bg-blue-100 p-3 rounded-bl-lg rounded-tr-lg">
+
+                            <img src={work_1} alt="" className='w-full pb-3'/>
+
+                            <h4 className='text-xl font-orbitron font-semibold'>
+                                Discuss with Colleagues
+                            </h4>
+                            <p className='font-poppins py-2'>Working online is the same experience as work ing in an office. This will be. achieved with..</p>
+
+                            <div className="flex gap-6 items-center">
+                                <Link to="/contact">
+                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-3 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
+                                        Try now
+                                    </button>
+                                </Link>
+
+                                <Link to="/contact">
+                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-3 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
+                                        Explore now
+                                    </button>
+                                </Link>
+                            </div>
+                        </div>
+
+                        <div className="bg-blue-100 p-3 rounded-bl-lg rounded-tr-lg">
+                            <img src={work_2} alt=""  className='w-full pb-3'/>
+
+                            <h4 className='text-xl font-orbitron font-semibold'>
+                                Discuss with Colleagues
+                            </h4>
+                            <p className='font-poppins py-2'>Working online is the same experience as work ing in an office. This will be. achieved with..</p>
+
+                            <div className="flex gap-6 items-center">
+                                <Link to="/contact">
+                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-3 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
+                                        Try now
+                                    </button>
+                                </Link>
+
+                                <Link to="/contact">
+                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-3 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
+                                        Explore now
+                                    </button>
+                                </Link>
+                            </div>
+                        </div>
+
+                        <div className="bg-blue-100 p-3 rounded-bl-lg rounded-tr-lg">
+                            <img src={work_3} alt=""  className='w-full pb-3'/>
+
+                            <h4 className='text-xl font-orbitron font-semibold'>
+                                Discuss with Colleagues
+                            </h4>
+                            <p className='font-poppins py-2'>Working online is the same experience as work ing in an office. This will be. achieved with..</p>
+
+                            <div className="flex gap-6 items-center">
+                                <Link to="/contact">
+                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-3 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
+                                        Try now
+                                    </button>
+                                </Link>
+
+                                <Link to="/contact">
+                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-3 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
+                                        Explore now
+                                    </button>
+                                </Link>
+                            </div>
+                        </div>
+
+                        <div className="bg-blue-100 p-3 rounded-bl-lg rounded-tr-lg">
+                            <img src={work_4} alt=""  className='w-full pb-3'/>
+
+                            <h4 className='text-xl font-orbitron font-semibold'>
+                                Discuss with Colleagues
+                            </h4>
+                            <p className='font-poppins py-2'>Working online is the same experience as work ing in an office. This will be. achieved with..</p>
+
+                            <div className="flex gap-6 items-center">
+                                <Link to="/contact">
+                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-3 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
+                                        Try now
+                                    </button>
+                                </Link>
+
+                                <Link to="/contact">
+                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-3 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
+                                        Explore now
+                                    </button>
+                                </Link>
+                            </div>
+                        </div>
+
+                        <div className="bg-blue-100 p-3 rounded-bl-lg rounded-tr-lg">
+                            <img src={work_5} alt=""  className='w-full pb-3'/>
+
+                            <h4 className='text-xl font-orbitron font-semibold'>
+                                Discuss with Colleagues
+                            </h4>
+                            <p className='font-poppins py-2'>Working online is the same experience as work ing in an office. This will be. achieved with..</p>
+
+                            <div className="flex gap-6 items-center">
+                                <Link to="/contact">
+                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-3 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
+                                        Try now
+                                    </button>
+                                </Link>
+
+                                <Link to="/contact">
+                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-3 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
+                                        Explore now
+                                    </button>
+                                </Link>
+                            </div>
+                        </div>
+
+                        <div className="bg-blue-100 p-3 rounded-bl-lg rounded-tr-lg">
+                            <img src={work_6} alt=""  className='w-full pb-3'/>
+
+                            <h4 className='text-xl font-orbitron font-semibold'>
+                                Discuss with Colleagues
+                            </h4>
+                            <p className='font-poppins py-2'>Working online is the same experience as work ing in an office. This will be. achieved with..</p>
+
+                            <div className="flex gap-6 items-center">
+                                <Link to="/contact">
+                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-3 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
+                                        Try now
+                                    </button>
+                                </Link>
+
+                                <Link to="/contact">
+                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-3 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
+                                        Explore now
+                                    </button>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            {/* how it works */}
+
+            <div className="pb-16 px-20">
+                <div className="container mx-auto">
+
+                    <div className="text-center py-8">
+                        <h3 className="text-white-100 text-center text-3xl md:text-6xl font-bold font-orbitron color-gradient">
+                            Our Latest Activity
+                        </h3>
+
+                        <p className="py-4 leading-loose font-poppins text-white-100 flex mx-auto lg:w-1/2 w-full">
+                            Adipiscing at in tellus integer. Pellentesque massa placerat duis ultricies. Venenatis cras
+                        </p>
+                    </div>
+
+                    <img src={fashion} alt=""  className='my-6'/>
+
+                </div>
+
+            </div>
+
+
+            <Footer />
 
         </div >
     )
