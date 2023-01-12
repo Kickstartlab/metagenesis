@@ -37,16 +37,22 @@ export default function Home() {
                     <Menu />
                     <div className="lg:flex block justify-between items-center py-12">
                         <div className="lg:w-1/2 w-full">
-                            <h2 className='md:text-5xl text-3xl leading-loose font-orbitron font-semibold text-white-100'>
-                                Bringing you connections & experiences out of this World
+                            <h2 className='md:text-5xl text-3xl font-orbitron font-semibold text-white-100'>
+                                Bringing you connections & experiences out of this <span className='color-gradient'>World</span>
                             </h2>
 
                             <p className='py-5 text-white-100 font-poppins'> Let's explore and create your experience with<br></br> metaverse. </p>
 
-                            <div className="button font-poppins">
+                            <div className="flex items-center gap-8 font-poppins">
                                 <Link to="/contact">
-                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-8 rounded-sm font-semibold mt-5">
+                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 lg:px-8 px-4 rounded-sm font-semibold mt-5">
                                         Get Started
+                                    </button>
+                                </Link>
+
+                                <Link to="/contact">
+                                    <button className="text-white-100 font-poppins border-gradient py-2 lg:px-8 px-4 rounded-sm font-semibold mt-5">
+                                        Explore Now
                                     </button>
                                 </Link>
                             </div>
@@ -95,9 +101,9 @@ export default function Home() {
                             <img src={meta} alt="Logo" />
                         </div>
 
-                        <div className='lg:w-1/3 w-full text-white-100'>
-                            <h2 className='md:text-5xl text-3xl font-orbitron font-semibold leading-5'>
-                                What is META GENESIS
+                        <div className='lg:w-1/3 w-full text-white-100 lg:pt-0 pt-12'>
+                            <h2 className='md:text-5xl text-3xl font-orbitron font-semibold'>
+                                What is <span className='color-gradient'>META GENESIS</span>
                             </h2>
 
                             <p className='py-5 font-poppins'>
@@ -119,12 +125,12 @@ export default function Home() {
             {/* what is meta genesis */}
 
             <div className="">
-                <div className="lg:py-12 py-0 lg:px-20 px-5 container mx-auto">
+                <div className="lg:pb-12 pb-0 lg:px-20 px-5 container mx-auto">
                     <div className="lg:flex block justify-between items-center py-12">
 
                         <div className='lg:w-1/2 w-full text-white-100'>
                             <h2 className='md:text-5xl text-3xl font-orbitron font-semibold'>
-                                META GENESIS Infrastructure
+                                <span className='color-gradient'>META GENESIS</span> Infrastructure
                                 for billions of users.
                             </h2>
 
@@ -184,7 +190,7 @@ export default function Home() {
 
                         <div>
                             <div className="text-center py-8">
-                                <h3 className="text-white-100 text-center text-3xl md:text-6xl font-bold font-orbitron">METAVERSE </h3>
+                                <h3 className="text-white-100 text-center text-3xl md:text-6xl font-bold font-orbitron color-gradient">METAVERSE </h3>
 
                                 <p className="py-4 leading-loose font-poppins text-white-100 flex mx-auto lg:w-1/2 w-full">
                                     a blockchain infrastructure and robust DApps platform custom-built for the Metaverse. Broadly Adopted by major institutions, local governments, and global brands.
@@ -324,8 +330,8 @@ export default function Home() {
                 <div className="container mx-auto">
 
                     <div className="text-center mb-8">
-                        <h3 className="text-white-100 text-center text-3xl md:text-4xl font-bold font-orbitron color-gradient">
-                            How does the Meta Genesis work
+                        <h3 className="text-white-100 text-center text-3xl md:text-4xl font-bold font-orbitron ">
+                            How does the <span className="color-gradient"> Meta Genesis work</span>
                         </h3>
 
                         <p className="py-4 leading-loose font-poppins text-white-100 flex mx-auto lg:w-1/2 w-full">
@@ -352,7 +358,7 @@ export default function Home() {
                                 </Link>
 
                                 <Link to="/contact">
-                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-3 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
+                                    <button className="text-white-100 font-poppins border-gradient py-2 px-3 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
                                         Explore now
                                     </button>
                                 </Link>
@@ -375,7 +381,7 @@ export default function Home() {
                                 </Link>
 
                                 <Link to="/contact">
-                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-3 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
+                                    <button className="text-white-100 font-poppins border-gradient py-2 px-3 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
                                         Explore now
                                     </button>
                                 </Link>
@@ -398,7 +404,7 @@ export default function Home() {
                                 </Link>
 
                                 <Link to="/contact">
-                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-3 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
+                                    <button className="text-white-100 font-poppins border-gradient py-2 px-3 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
                                         Explore now
                                     </button>
                                 </Link>
@@ -421,7 +427,7 @@ export default function Home() {
                                 </Link>
 
                                 <Link to="/contact">
-                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-3 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
+                                    <button className="text-white-100 font-poppins border-gradient py-2 px-3 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
                                         Explore now
                                     </button>
                                 </Link>
@@ -444,7 +450,7 @@ export default function Home() {
                                 </Link>
 
                                 <Link to="/contact">
-                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-3 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
+                                    <button className="text-white-100 font-poppins border-gradient py-2 px-3 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
                                         Explore now
                                     </button>
                                 </Link>
@@ -467,7 +473,7 @@ export default function Home() {
                                 </Link>
 
                                 <Link to="/contact">
-                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-3 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
+                                    <button className="text-white-100 font-poppins border-gradient py-2 px-3 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
                                         Explore now
                                     </button>
                                 </Link>
@@ -484,8 +490,8 @@ export default function Home() {
                 <div className="container mx-auto">
 
                     <div className="text-center py-8">
-                        <h3 className="text-white-100 text-center text-3xl md:text-4xl font-bold font-orbitron color-gradient">
-                            Our Latest Activity
+                        <h3 className="text-white-100 text-center text-3xl md:text-4xl font-bold font-orbitron ">
+                            Our Latest <span className='color-gradient'>Activity</span>
                         </h3>
 
                         <p className="py-4 leading-loose font-poppins text-white-100 flex mx-auto lg:w-1/2 w-full">
