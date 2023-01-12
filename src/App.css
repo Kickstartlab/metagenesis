@@ -24,7 +24,7 @@
 }
 
 .colo-gradient {
-  background: linear-gradient(97.16deg, #F86CF8 12.04%, #64CEF5 81.84%);
+  background-image: linear-gradient(97.16deg, #F86CF8 12.04%, #64CEF5 81.84%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -38,9 +38,9 @@
 }
 
 .slick-slide {
-  padding: 20px;
+  padding: 15px;
 }
 
 .slick-list {
-  padding: -20px;
+  padding: -15px;
 }

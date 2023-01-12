@@ -21,7 +21,7 @@ import box from '../assets/box.png';
 import video_nft from '../assets/video-nft.png';
 import launch from '../assets/launch.png';
 import { Link } from "react-router-dom";
-
+import Slider from './Slider'
 
 export default function Home() {
 
@@ -37,11 +37,8 @@ export default function Home() {
                     <Menu />
                     <div className="lg:flex block justify-between items-center py-12">
                         <div className="lg:w-1/2 w-full">
-                            <h2 className='md:text-5xl text-3xl leaading-loose font-orbitron font-semibold text-white-100'>
-                                Bringing you connections & experiences out of this
-                            </h2>
-                            <h2 className='md:text-5xl text-3xl font-orbitron font-semibold text-white-100'>
-                                World
+                            <h2 className='md:text-5xl text-3xl leading-loose font-orbitron font-semibold text-white-100'>
+                                Bringing you connections & experiences out of this World
                             </h2>
 
                             <p className='py-5 text-white-100 font-poppins'> Let's explore and create your experience with<br></br> metaverse. </p>
@@ -99,7 +96,7 @@ export default function Home() {
                         </div>
 
                         <div className='lg:w-1/3 w-full text-white-100'>
-                            <h2 className='md:text-5xl text-3xl font-orbitron font-semibold'>
+                            <h2 className='md:text-5xl text-3xl font-orbitron font-semibold leading-5'>
                                 What is META GENESIS
                             </h2>
 
@@ -272,10 +269,18 @@ export default function Home() {
 
                     </div>
 
+                    {/* slider section */}
+
+                    <div className="lg:pt-12 pt-5 lg:pb-20 pb-5">
+                        <Slider />
+                    </div>
+
                     <img src={video_nft} alt="box" className='flex mx-auto' />
                 </div>
 
             </div>
+
+
 
             {/* META GENESIS Launchpad */}
 
