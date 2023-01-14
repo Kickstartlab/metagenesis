@@ -56,13 +56,13 @@ export default function Menu() {
           <Link to="/" className="text-lg ml-4 hover:text-purple-100 font-semibold">Home</Link>
         </button>
         <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
-          <Link to="/about" className="text-lg ml-4 hover:text-purple-100 font-semibold">About</Link>
+          <Link to="/" className="text-lg ml-4 hover:text-purple-100 font-semibold">About</Link>
         </button>
         <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
-          <Link to="/destination" className="text-lg ml-4 hover:text-purple-100 font-semibold">Destination</Link>
+          <Link to="/" className="text-lg ml-4 hover:text-purple-100 font-semibold">Destination</Link>
         </button>
         <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
-          <Link to="/contact" className="text-lg ml-4 hover:text-purple-100 font-semibold">Service</Link>
+          <Link to="/" className="text-lg ml-4 hover:text-purple-100 font-semibold">Service</Link>
         </button>
       </div> : null
       }

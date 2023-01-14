@@ -61,7 +61,7 @@ export default function Footer() {
                 <img src={facebook} alt="Facebook" />
               </a>
 
-              <a href="">
+              <a href="https://t.me/MetaGenesisPortal">
                 <img src={telegram} alt="Telegram" />
               </a>
             </div>

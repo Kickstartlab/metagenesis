@@ -41,43 +41,20 @@ export default function Home() {
                                 Bringing you connections & experiences out of this <span className='color-gradient'>World</span>
                             </h2>
 
-                            <p className='py-5 text-white-100 font-poppins'> Let's explore and create your experience with<br></br> metaverse. </p>
+                            <p className='py-5 text-white-100 font-poppins'> Let's explore and create your experience with<br></br> Metaverse. </p>
 
                             <div className="flex items-center gap-8 font-poppins">
-                                <Link to="/contact">
+                                <a href="https://t.me/MetaGenesisPortal">
                                     <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 lg:px-8 px-4 rounded-sm font-semibold mt-5">
                                         Get Started
                                     </button>
-                                </Link>
+                                </a>
 
-                                <Link to="/contact">
-                                    <button className="text-white-100 font-poppins border-gradient py-2 lg:px-8 px-4 rounded-sm font-semibold mt-5">
+                                <a href="/">
+                                    <button className="text-white-100 font-poppins border-gradient py-2 lg:px-8 px-4 font-semibold mt-5 hover:bg-gradient-to-r from-purple-100 to-purple-200">
                                         Explore Now
                                     </button>
-                                </Link>
-                            </div>
-
-                            <div className="flex gap-12 text-white-100 font-orbitron mt-8">
-                                <div>
-                                    <h5 className="text-2xl font-oribtron">
-                                        29K+
-                                    </h5>
-                                    <p>Artworks</p>
-                                </div>
-
-                                <div>
-                                    <h5 className="text-2xl font-oribtron">
-                                        25K+
-                                    </h5>
-                                    <p>Auction</p>
-                                </div>
-
-                                <div>
-                                    <h5 className="text-2xl font-oribtron">
-                                        29K+
-                                    </h5>
-                                    <p>Artworks</p>
-                                </div>
+                                </a>
                             </div>
 
                         </div>
@@ -88,7 +65,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <img src={box} alt="box" className='flex mx-auto' />
+                    <iframe src="https://player.vimeo.com/video/702333130?h=b1a1753e95" className='flex mx-auto w-640 rounded-xl' height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -107,15 +84,12 @@ export default function Home() {
                             </h2>
 
                             <p className='py-5 font-poppins'>
-                                Adipiscing at in tellus integer. Pellentesque massa placerat duis ultricies lacus. Nisi porta lorem mollis aliquam ut porttitor leo. Venenatis cras..</p>
+                                MetaGenesis is a blockchain infrastructure and robust DApps platform custom-built for the Metaverse.Our vision is to
+                                provide the fully immersive decentralized Metaverse infrastructures for billions of users to connect and create a fully
+                                decentralized ecosystem beyond any boundaries. The entirely user-generated platform that offers fascinating virtual
+                                experiences owned and built by users is the future that MetaGenesis is leading to.
+                            </p>
 
-                            <div className="button font-poppins">
-                                <Link to="/contact">
-                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-8 rounded-sm font-semibold mt-5">
-                                        Know More
-                                    </button>
-                                </Link>
-                            </div>
                         </div>
 
                     </div>
@@ -134,40 +108,18 @@ export default function Home() {
                                 for billions of users.
                             </h2>
 
+                            <p className='pt-5 font-poppins'>
+                                With Meta Genesis, we intend to bring more value to our community where you can enjoy world class experience
+                                while having a good social experience with your friends from around the world. Blockchain technology facilitates us to
+                                build such a platform where the main component of any ecosystem i.e. community has more value.
+
+                            </p>
+
                             <p className='py-5 font-poppins'>
-                                a blockchain infrastructure and robust DApps platform custom-built for the Metaverse. Broadly Adopted by major institutions, local governments, and global brands.</p>
+                                At Meta Genesis, we aim to create a long lasting and sustainable ecosystem of multiple infrastructure where
+                                community can enjoy the interactive features and earn passive rewards simultaneously
 
-                            <div className="flex gap-6 items-center font-poppins flex-wrap">
-                                <Link to="/contact">
-                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-5 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
-                                        Know More
-                                        <span><svg width="12" height="13" viewBox="0 0 12 13" class="mt-1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 1.5C2 0.947715 2.44772 0.5 3 0.5L11 0.500001C11.5523 0.500001 12 0.947716 12 1.5V9.5C12 10.0523 11.5523 10.5 11 10.5C10.4477 10.5 10 10.0523 10 9.5V3.91421L1.70711 12.2071C1.31658 12.5976 0.683417 12.5976 0.292893 12.2071C-0.0976311 11.8166 -0.0976311 11.1834 0.292893 10.7929L8.58579 2.5L3 2.5C2.44772 2.5 2 2.05228 2 1.5Z" fill="#fff"></path>
-                                        </svg>
-                                        </span>
-                                    </button>
-                                </Link>
-
-                                <Link to="/contact">
-                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-5 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
-                                        Know More
-                                        <span><svg width="12" height="13" viewBox="0 0 12 13" class="mt-1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 1.5C2 0.947715 2.44772 0.5 3 0.5L11 0.500001C11.5523 0.500001 12 0.947716 12 1.5V9.5C12 10.0523 11.5523 10.5 11 10.5C10.4477 10.5 10 10.0523 10 9.5V3.91421L1.70711 12.2071C1.31658 12.5976 0.683417 12.5976 0.292893 12.2071C-0.0976311 11.8166 -0.0976311 11.1834 0.292893 10.7929L8.58579 2.5L3 2.5C2.44772 2.5 2 2.05228 2 1.5Z" fill="#fff"></path>
-                                        </svg>
-                                        </span>
-                                    </button>
-                                </Link>
-
-                                <Link to="/contact">
-                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-5 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
-                                        Know More
-                                        <span><svg width="12" height="13" viewBox="0 0 12 13" class="mt-1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 1.5C2 0.947715 2.44772 0.5 3 0.5L11 0.500001C11.5523 0.500001 12 0.947716 12 1.5V9.5C12 10.0523 11.5523 10.5 11 10.5C10.4477 10.5 10 10.0523 10 9.5V3.91421L1.70711 12.2071C1.31658 12.5976 0.683417 12.5976 0.292893 12.2071C-0.0976311 11.8166 -0.0976311 11.1834 0.292893 10.7929L8.58579 2.5L3 2.5C2.44772 2.5 2 2.05228 2 1.5Z" fill="#fff"></path>
-                                        </svg>
-                                        </span>
-                                    </button>
-                                </Link>
-                            </div>
+                            </p>
                         </div>
 
                         <div className="lg:w-1/3 w-full">
@@ -179,7 +131,7 @@ export default function Home() {
 
             {/* metaverse section */}
 
-            <div className="bg-side lg:px-0 px-5">
+            <div className="bg-side lg:pt-8 lg:px-0 px-5">
                 <div className="container mx-auto">
 
                     <div className="lg:flex block items-center ">
@@ -188,12 +140,16 @@ export default function Home() {
                             <img src={metaverse} alt="" />
                         </div>
 
-                        <div>
+                        <div className='w-8/12'>
                             <div className="text-center py-8">
-                                <h3 className="text-white-100 text-center text-3xl md:text-6xl font-bold font-orbitron color-gradient">METAVERSE </h3>
+                                <h3 className="text-white-100 text-center text-3xl md:text-6xl font-bold font-orbitron color-gradient">MetaGenesis Metaverse</h3>
 
-                                <p className="py-4 leading-loose font-poppins text-white-100 flex mx-auto lg:w-1/2 w-full">
-                                    a blockchain infrastructure and robust DApps platform custom-built for the Metaverse. Broadly Adopted by major institutions, local governments, and global brands.
+                                <p className="py-4 leading-loose font-poppins text-white-100 flex mx-auto">
+                                    $MGenesis Metaverse app will be a device-ready Metaverse platform, consisting of Avatars, Lands, Worlds, various
+                                    NFT items, and unlimited Games. It will empowers and connect creators and users on its Create to Earn, Build to
+                                    Earn ecosystem. Community will be able to travel to different locations via portals to enjoy different features of the
+                                    metaverse.
+
                                 </p>
                             </div>
 
@@ -219,24 +175,13 @@ export default function Home() {
 
                         <div className='lg:w-1/2 w-full text-white-100'>
                             <h2 className='color-gradient md:text-5xl text-3xl font-orbitron font-semibold lg:text-right'>
-                                META GENESIS AI
+                                META GENESIS Builder
                             </h2>
 
                             <p className='py-5 font-poppins lg:text-right'>
-                                a blockchain infrastructure and robust DApps platform custom-built for the Metaverse. Broadly Adopted by major institutions, local governments, and global brands.
+                                The builder for the Avatar, World, and Games to build anything in Metaverse with no coding knowledge required from
+                                users.
                             </p>
-
-                            <div className="button font-poppins lg:float-right">
-                                <Link to="/contact">
-                                    <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-5 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
-                                        Learn More
-                                        <span><svg width="12" height="13" viewBox="0 0 12 13" class="mt-1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 1.5C2 0.947715 2.44772 0.5 3 0.5L11 0.500001C11.5523 0.500001 12 0.947716 12 1.5V9.5C12 10.0523 11.5523 10.5 11 10.5C10.4477 10.5 10 10.0523 10 9.5V3.91421L1.70711 12.2071C1.31658 12.5976 0.683417 12.5976 0.292893 12.2071C-0.0976311 11.8166 -0.0976311 11.1834 0.292893 10.7929L8.58579 2.5L3 2.5C2.44772 2.5 2 2.05228 2 1.5Z" fill="#fff"></path>
-                                        </svg>
-                                        </span>
-                                    </button>
-                                </Link>
-                            </div>
                         </div>
 
                     </div>
@@ -251,22 +196,18 @@ export default function Home() {
 
                         <div className='lg:w-1/2 w-full text-white-100'>
                             <h3 className="text-white-100 color-gradient text-3xl md:text-6xl font-bold font-orbitron color-gradient">
-                                META GENESIS NFT’s
+                                MetaGenesis NFT Marketplace
                             </h3>
 
-                            <p className="py-4 font-poppins">
-                                a blockchain infrastructure and robust DApps platform custom-built for the Metaverse. Broadly Adopted by major institutions, local governments, and global brands.
+                            <p className="py-5 font-poppins">
+                                MetaGenesis is the primary NFT Marketplace of $MGenesis to trade various NFT assets.
+                                Every aspect of MetaGenesis ecosystem has been gamified making it more fun and rewarding for both collectors and
+                                players. MetaGenesis NFT's are not just your average NFT's , every NFT has a predefined mining power based on
+                                the level and rarity of your NFT. And the gamification of NFT's just dont stop here, players can use common,
+                                uncommon and rare NFT's to upgrade levels of epic and legendary NFT's to increase their power. Thus, increasing
+                                their reward.
                             </p>
 
-                            <Link to="/contact">
-                                <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-5 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
-                                    Know More
-                                    <span><svg width="12" height="13" viewBox="0 0 12 13" class="mt-1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2 1.5C2 0.947715 2.44772 0.5 3 0.5L11 0.500001C11.5523 0.500001 12 0.947716 12 1.5V9.5C12 10.0523 11.5523 10.5 11 10.5C10.4477 10.5 10 10.0523 10 9.5V3.91421L1.70711 12.2071C1.31658 12.5976 0.683417 12.5976 0.292893 12.2071C-0.0976311 11.8166 -0.0976311 11.1834 0.292893 10.7929L8.58579 2.5L3 2.5C2.44772 2.5 2 2.05228 2 1.5Z" fill="#fff"></path>
-                                    </svg>
-                                    </span>
-                                </button>
-                            </Link>
                         </div>
 
                         <div className="flex items-center justify-center gap-3 py-8">
@@ -281,7 +222,7 @@ export default function Home() {
                         <Slider />
                     </div>
 
-                    <img src={video_nft} alt="box" className='flex mx-auto' />
+                    <iframe src="https://player.vimeo.com/video/702333130?h=b1a1753e95" className='flex mx-auto w-640 rounded-xl' height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
             </div>
