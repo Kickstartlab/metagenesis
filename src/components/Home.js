@@ -140,7 +140,7 @@ export default function Home() {
                             <img src={metaverse} alt="" />
                         </div>
 
-                        <div className='w-8/12'>
+                        <div className='lg:w-8/12 w-full'>
                             <div className="text-center py-8">
                                 <h3 className="text-white-100 text-center text-3xl md:text-6xl font-bold font-orbitron color-gradient">MetaGenesis Metaverse</h3>
 
