@@ -379,7 +379,7 @@ export default function Home() {
                         </div>
 
 
-                        <div className="flex gap-12 items-center justify-center py-6">
+                        <div className="lg:flex gap-12 items-center justify-center py-6">
 
                             <div className="flex flex-col gap-y-8 items-center justify-center">
 
