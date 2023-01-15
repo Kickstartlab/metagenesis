@@ -474,7 +474,7 @@ export default function Home() {
 
                     <div className="lg:flex gap-3">
 
-                        <div className="w-9/12 lg:block hidden">
+                        <div className="lg:block hidden">
                             <img src={roadmap} alt="" />
                         </div>
 
