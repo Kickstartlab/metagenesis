@@ -31,10 +31,7 @@ import brand_10 from '../assets/brand-10.png';
 import brand_11 from '../assets/brand-11.png';
 import lock from '../assets/lock.png';
 import roadmap from '../assets/roadmap.png';
-
-
-
-import { Link } from "react-router-dom";
+import ecosystem from '../assets/ecosystem.png';
 import Slider from './Slider'
 
 export default function Home() {
@@ -267,23 +264,29 @@ export default function Home() {
                     {/* ecosystem */}
 
                     <div className="lg:py-12 py-5 container mx-auto">
-                        <div className='text-white-100 lg:py-0 py-12'>
-                            <h2 className='color-gradient md:text-5xl text-3xl font-orbitron font-semibold'>
-                                ECOSYSTEM
-                            </h2>
+                        <div className="lg:flex items-center justify-between">
 
-                            <p className='py-6 font-poppins font-bold text-xl'>
-                                $MGENESIS is the primary native token of MetaGenesis, which empowers the entire metaverse ecosystem.
-                            </p>
+                            <div className='text-white-100 lg:py-0 py-12'>
+                                <h2 className='color-gradient md:text-5xl text-3xl font-orbitron font-semibold'>
+                                    ECOSYSTEM
+                                </h2>
 
-                            <p className='py-6 font-poppins'>
-                                MGEN chain: The blockchain network which realizes robust infrastructure for the Metaverse. MGEN Metaverse app: Universal device-ready Metaverse app optimized for smartphones. $MGENESIS token: The eco-stream for this entire Metaverse ecosystem.
-                                MGEN: Marketplace, to buy and sell your NFTs.
-                                MGEN App: The mobile asset management app which also can be your Metaverse wallet.
-                                MGEN Builder: The builder for the Avatar, World and Games to build anything in Metaverse with no coding knowledge.
-                            </p>
+                                <p className='py-6 font-poppins font-bold text-xl'>
+                                    $MGENESIS is the primary native token of MetaGenesis, which empowers the entire metaverse ecosystem.
+                                </p>
 
+                                <p className='py-6 font-poppins'>
+                                    MGEN chain: The blockchain network which realizes robust infrastructure for the Metaverse. MGEN Metaverse app: Universal device-ready Metaverse app optimized for smartphones. $MGENESIS token: The eco-stream for this entire Metaverse ecosystem.
+                                    MGEN: Marketplace, to buy and sell your NFTs.
+                                    MGEN App: The mobile asset management app which also can be your Metaverse wallet.
+                                    MGEN Builder: The builder for the Avatar, World and Games to build anything in Metaverse with no coding knowledge.
+                                </p>
+
+                            </div>
+
+                            <img src={ecosystem} alt="" className='w-6/12 lg:block flex mx-auto'/>
                         </div>
+
                     </div>
 
                 </div>
@@ -472,7 +475,7 @@ export default function Home() {
                     <div className="lg:flex gap-3">
 
                         <div className="w-9/12 lg:block hidden">
-                            <img src={roadmap} alt=""/>
+                            <img src={roadmap} alt="" />
                         </div>
 
                         <div className="text-white-100">
