@@ -15,7 +15,7 @@ export default function Footer() {
 
             <a href="/" className="logo lg:my-12">
               <h2 className='color-gradient md:text-5xl text-3xl font-orbitron font-semibold'>
-                Meta Genesis
+                MetaGenesis
               </h2>
             </a>
             <p className='py-5 leading-loose'>Adipiscing at in tellus integer. Pellentesque massa placerat duis ultricies lacus. Nisi porta lorem mollis aliquam ut porttitor</p>
@@ -27,11 +27,11 @@ export default function Footer() {
               About Us
             </h4>
             <ul>
-              <li className='pb-3'>About MetaV</li>
-              <li className='pb-3'>Contact Us</li>
-              <li className='pb-3'>FAQ</li>
-              <li className='pb-3'>Privacy Policy</li>
-              <li className='pb-3'>Terms of Service</li>
+              <li className='pb-3'>About</li>
+              <li className='pb-3'>Contact</li>
+              <li className='pb-3'>Partners</li>
+              <li className='pb-3'>Tokenomics</li>
+              <li className='pb-3'>Roadmap</li>
             </ul>
           </div>
 
@@ -41,10 +41,9 @@ export default function Footer() {
             </h4>
             <ul>
               <li className='pb-3'>NFT Marketplace</li>
-              <li className='pb-3'>Virtual Concert</li>
-              <li className='pb-3'>Gaming</li>
-              <li className='pb-3'>Artwork</li>
-              <li className='pb-3'>Online Travel</li>
+              <li className='pb-3'>Roadmap</li>
+              <li className='pb-3'>Meta Genesis Chain</li>
+              <li className='pb-3'>Metaverse</li>
             </ul>
           </div>
 

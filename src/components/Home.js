@@ -11,13 +11,6 @@ import metaverse from '../assets/metaverse.png';
 import ai from '../assets/ai.png';
 import nft from '../assets/nft.png';
 import launch from '../assets/launch.png';
-import pie_1 from '../assets/pie-1.png';
-import pie_2 from '../assets/pie-2.png';
-import pie_3 from '../assets/pie-3.png';
-import pie_4 from '../assets/pie-4.png';
-import pie_5 from '../assets/pie-5.png';
-import pie_6 from '../assets/pie-6.png';
-import pie_7 from '../assets/pie-7.png';
 import brand_1 from '../assets/brand-1.png';
 import brand_2 from '../assets/brand-2.png';
 import brand_3 from '../assets/brand-3.png';
@@ -284,7 +277,7 @@ export default function Home() {
 
                             </div>
 
-                            <img src={ecosystem} alt="" className='w-6/12 lg:block flex mx-auto'/>
+                            <img src={ecosystem} alt="" className='w-6/12 lg:block flex mx-auto' />
                         </div>
 
                     </div>
@@ -321,7 +314,7 @@ export default function Home() {
 
                 {/* token distribution */}
 
-                <div className="bg-side-2">
+                <div className="bg-side-2 text-white-100">
 
                     <div className="lg:px-16 lg:py-12 py-5 px-5 container mx-auto">
 
@@ -337,30 +330,94 @@ export default function Home() {
 
                         </div>
 
-                        <div className="flex lg:gap-12 gap-4 items-center justify-center py-6">
-                            <div>
-                                <img src={pie_1} alt="" />
+                        <div className="lg:flex lg:gap-12 gap-4 items-center justify-center py-6 ">
+                            <div className="flex flex-col gap-y-8 items-center justify-center">
+
+                                <div className="progress">
+                                    <span className="title timer" data-from="0" data-to="10" data-speed="1500">10</span>
+                                    <div className="overlay"></div>
+                                    <div className="left"></div>
+                                    <div className="right"></div>
+                                </div>
+                                <i>CEX Reserve</i>
                             </div>
-                            <div>
-                                <img src={pie_2} alt="" />
+
+                            <div className="flex flex-col gap-y-8 items-center justify-center">
+
+                                <div className="progress">
+                                    <span className="title timer" data-from="0" data-to="20" data-speed="1500">20</span>
+                                    <div className="overlay"></div>
+                                    <div className="left"></div>
+                                    <div className="right"></div>
+                                </div>
+                                <i>Liquidity</i>
                             </div>
-                            <div>
-                                <img src={pie_3} alt="" />
+
+                            <div className="flex flex-col gap-y-8 items-center justify-center">
+
+                                <div className="progress">
+                                    <span className="title timer" data-from="0" data-to="30" data-speed="1500">30</span>
+                                    <div className="overlay"></div>
+                                    <div className="left"></div>
+                                    <div className="right"></div>
+                                </div>
+                                <i>Public sale Tokens</i>
+
                             </div>
-                            <div>
-                                <img src={pie_4} alt="" />
+
+                            <div className="flex flex-col gap-y-8 items-center justify-center">
+
+                                <div className="progress">
+                                    <span className="title timer" data-from="0" data-to="20" data-speed="1500">20</span>
+                                    <div className="overlay"></div>
+                                    <div className="left"></div>
+                                    <div className="right"></div>
+                                </div>
+                                <i>Initial Burn</i>
+
                             </div>
                         </div>
 
+
                         <div className="flex gap-12 items-center justify-center py-6">
-                            <div>
-                                <img src={pie_5} alt="" />
+
+                            <div className="flex flex-col gap-y-8 items-center justify-center">
+
+                                <div className="progress">
+                                    <span className="title timer" data-from="0" data-to="10" data-speed="1500">10</span>
+                                    <div className="overlay"></div>
+                                    <div className="left"></div>
+                                    <div className="right"></div>
+                                </div>
+                                <i>Staking
+                                    Reserve</i>
+
                             </div>
-                            <div>
-                                <img src={pie_6} alt="" />
+
+                            <div className="flex flex-col gap-y-8 items-center justify-center">
+
+                                <div className="progress">
+                                    <span className="title timer" data-from="0" data-to="5" data-speed="1500">5</span>
+                                    <div className="overlay"></div>
+                                    <div className="left"></div>
+                                    <div className="right"></div>
+                                </div>
+                                <i>Reward
+                                    Reserve</i>
+
                             </div>
-                            <div>
-                                <img src={pie_7} alt="" />
+
+                            <div className="flex flex-col gap-y-8 items-center justify-center">
+
+                                <div className="progress">
+                                    <span className="title timer" data-from="0" data-to="5" data-speed="1500">5</span>
+                                    <div className="overlay"></div>
+                                    <div className="left"></div>
+                                    <div className="right"></div>
+                                </div>
+                                <i>Developement
+                                    Reserve</i>
+
                             </div>
                         </div>
                     </div>
@@ -424,7 +481,7 @@ export default function Home() {
                         ROADMAP
                     </h2>
 
-                    <div className="lg:flex gap-24 py-12 justify-center">
+                    <div className="lg:flex gap-24 py-12 lg:px-24">
 
                         <div className="text-white-100">
                             <h5 className="text-xl font-orbitron font-semibold">
