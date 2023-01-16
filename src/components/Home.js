@@ -23,6 +23,7 @@ import brand_9 from '../assets/brand-9.png';
 import brand_10 from '../assets/brand-10.png';
 import brand_11 from '../assets/brand-11.png';
 import lock from '../assets/lock.png';
+import video from '../assets/video.mp4';
 import roadmap from '../assets/roadmap.png';
 import ecosystem from '../assets/ecosystem.png';
 import Slider from './Slider'
@@ -69,9 +70,10 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <iframe src="https://player.vimeo.com/video/702333130?h=b1a1753e95" className='flex mx-auto w-640 rounded-xl' height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
+
+            <video width="1297" height="654" controls="" class="rounded-4xl my-8"><source src={video} type="video/mp4" />Error Message</video>
 
             {/* what is meta genesis */}
 
@@ -226,7 +228,7 @@ export default function Home() {
                         <Slider />
                     </div>
 
-                    <iframe src="https://player.vimeo.com/video/702333130?h=b1a1753e95" className='flex mx-auto w-640 rounded-xl' height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    <video width="1297" height="654" controls="" class="rounded-4xl my-8 aos-init aos-animate" data-aos="zoom-out"><source src={video} type="video/mp4" />Error Message</video>
                 </div>
 
             </div>
@@ -591,56 +593,54 @@ export default function Home() {
                         SECURITY & <br></br>SAFETY CERTIFICATION
                     </h2>
 
-                    <div className="grid grid-cols-4 gap-6 place-items-baseline justify-content-center pt-8">
+                    <div className="flex gap-6 items-center justify-center py-8">
 
-                        <div className="col-span-1 flex flex-col gap-y-5">
-                            <div>
+                        <div className="flex flex-col gap-y-5">
+                            <div className='p-2 rounded-lg bg-purple-200'>
                                 <img src={brand_1} alt="" className='w-10/12' />
                             </div>
-                            <div>
+                            <div className='p-2 rounded-lg bg-purple-200'>
                                 <img src={brand_2} alt="" className='w-8/12 pl-3' />
                             </div>
-                            <div>
+                            <div className='p-2 rounded-lg bg-purple-200'>
                                 <img src={brand_3} alt="" className='w-10/12' />
                             </div>
                         </div>
 
-                        <div className="col-span-1 flex flex-col gap-y-5">
-                            <div>
+                        <div className="flex flex-col gap-y-5">
+                            <div className='p-2 rounded-lg bg-purple-200'>
                                 <img src={brand_4} alt="" className='w-10/12' />
                             </div>
-                            <div>
+                            <div className='p-2 rounded-lg bg-purple-200'>
                                 <img src={brand_5} alt="" className='w-10/12' />
                             </div>
-                            <div>
+                            <div className='p-2 rounded-lg bg-purple-200'>
                                 <img src={brand_6} alt="" className='w-10/12' />
                             </div>
                         </div>
 
-                        <div className="col-span-1 flex flex-col gap-y-5">
-                            <div>
-                                <img src={brand_7} alt="" className='w-8/12' />
+                        <div className="flex flex-col gap-y-5">
+                            <div className='p-2 rounded-lg bg-purple-200'>
+                                <img src={brand_7} alt="" className='w-1/2 flex mx-auto' />
                             </div>
-                            <div>
-                                <img src={brand_8} alt="" className='w-7/12 pt-5' />
+                            <div className='p-2 rounded-lg bg-purple-200'>
+                                <img src={brand_8} alt="" className='w-1/2 flex mx-auto' />
                             </div>
+
                         </div>
 
-                        <div className="col-span-1 flex flex-col gap-y-5">
-                            <div>
-                                <img src={brand_9} alt="" className='w-9/12' />
+                        <div className="flex flex-col gap-y-5">
+                            <div className='p-2 rounded-lg bg-purple-200'>
+                                <img src={brand_9} alt="" className='w-9/12 flex mx-auto' />
                             </div>
-                            <div>
-                                <img src={brand_10} alt="" className='w-9/12' />
+                            <div className='p-2 rounded-lg bg-purple-200'>
+                                <img src={brand_10} alt="" className='w-9/12 flex mx-auto' />
                             </div>
                         </div>
 
                     </div>
+                    <img src={brand_11} alt="" className='flex mx-auto p-2 rounded-lg bg-purple-200 mt-3' />
 
-
-                    <div>
-                        <img src={brand_11} alt="" className='flex mx-auto' />
-                    </div>
                 </div>
 
                 {/* JOIN US NOW */}
