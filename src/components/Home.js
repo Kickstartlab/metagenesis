@@ -419,7 +419,7 @@ export default function Home() {
                         ROADMAP
                     </h2>
 
-                    <div className="lg:flex gap-24 py-12 lg:px-24">
+                    <div className="lg:flex gap-24 py-12 lg:px-24 px-5">
 
                         <div data-aos="fade-up" className="text-white-100">
                             <h5 className="text-xl font-orbitron font-semibold">
@@ -467,7 +467,7 @@ export default function Home() {
                     </div>
 
 
-                    <div className="lg:flex gap-3">
+                    <div className="lg:flex gap-3 px-5">
 
                         <div className="lg:block hidden">
                             <img src={roadmap} alt="" />
@@ -588,7 +588,7 @@ export default function Home() {
                         JOIN US NOW
                     </h2>
 
-                    <p data-aos="fade-down" className='lg:py-12 py-5 font-poppins lg:w-1/2 w-full text-white-50'>
+                    <p data-aos="fade-down" className='lg:py-12 py-5 px-5 font-poppins lg:w-1/2 w-full text-white-50'>
                         Community is always First! Our community is growing stronger by the day.
                         If you want to ask a question or meet other people with a similar world-view,
                         join our social media channels.
