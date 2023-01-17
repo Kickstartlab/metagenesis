@@ -634,21 +634,21 @@ export default function Home() {
                             <a href='https://bscscan.com/' className='py-3 rounded-xl bg-purple-50 lg:px-6'>
                                 <img src={brand_2} alt="" className='flex mx-auto' />
                             </a>
-                            <div className='py-2 rounded-xl bg-purple-50 lg:px-6'>
+                            <a href='http://pinksale.finance/' className='py-2 rounded-xl bg-purple-50 lg:px-6'>
                                 <img src={brand_3} alt="" className='flex mx-auto' />
-                            </div>
+                            </a>
                         </div>
 
                         <div className="flex flex-col gap-5">
-                            <div className='rounded-xl bg-purple-50 py-2 lg:px-6'>
+                            <a href='https://www.coingecko.com/' className='rounded-xl bg-purple-50 py-2 lg:px-6'>
                                 <img src={brand_4} alt="" className='flex mx-auto' />
-                            </div>
-                            <div className='py-2 rounded-xl bg-purple-50 lg:px-6'>
+                            </a>
+                            <a href='' className='py-2 rounded-xl bg-purple-50 lg:px-6'>
                                 <img src={brand_5} alt="" className='flex mx-auto' />
-                            </div>
-                            <div className='py-2 rounded-xl bg-purple-50 lg:px-6'>
+                            </a>
+                            <a href='' className='py-2 rounded-xl bg-purple-50 lg:px-6'>
                                 <img src={brand_6} alt="" className='flex mx-auto' />
-                            </div>
+                            </a>
                         </div>
 
                         <div className="flex flex-col gap-5">
