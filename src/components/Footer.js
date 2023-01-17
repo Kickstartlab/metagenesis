@@ -1,6 +1,6 @@
 import React from 'react'
 import twitter from '../assets/twitter.png';
-import facebook from '../assets/fcebook.png';
+import discord from '../assets/discord.png';
 import telegram from '../assets/telegram.png';
 
 
@@ -56,12 +56,12 @@ export default function Footer() {
                 <img src={twitter} alt="Twitter" />
               </a>
 
-              <a href="">
-                <img src={facebook} alt="Facebook" />
-              </a>
-
               <a href="https://t.me/MetaGenesisPortal">
                 <img src={telegram} alt="Telegram" />
+              </a>
+
+              <a href="">
+                <img src={discord} alt="Discord" />
               </a>
             </div>
             <p>{new Date().getFullYear()} © Metagenesistoken.com All rights reserved.</p>

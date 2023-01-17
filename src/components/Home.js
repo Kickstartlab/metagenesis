@@ -521,7 +521,7 @@ export default function Home() {
 
             {/* partners and supporters */}
 
-            <div id='partners' className="bg-side">
+            <div id='partners' className="bg-side-2">
 
                 <div className="lg:px-16 lg:py-12 py-5 px-5 container mx-auto">
 
@@ -529,51 +529,51 @@ export default function Home() {
                         PARTNERS & SUPPORTERS
                     </h2>
 
-                    <div data-aos="zoom-out" className="lg:flex gap-6 items-center justify-center py-12">
+                    <div data-aos="zoom-out" className="grid lg:grid-cols-3 grid-cols-1 gap-6 place-items-center justify-content-center py-12">
 
-                        <div className="flex flex-col gap-y-5">
+                        <div className="flex flex-col gap-5">
                             <div className='p-2 rounded-xl bg-purple-50'>
-                                <img src={brand_1} alt="" className='w-10/12' />
+                                <img src={brand_1} alt="" className='' />
                             </div>
                             <div className='p-3 rounded-xl bg-purple-50'>
                                 <img src={brand_2} alt="" className='w-8/12 pl-3' />
                             </div>
                             <div className='p-2 rounded-xl bg-purple-50'>
-                                <img src={brand_3} alt="" className='w-10/12' />
+                                <img src={brand_3} alt="" className='' />
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-y-5">
+                        <div className="flex flex-col gap-5">
                             <div className='rounded-xl bg-purple-50'>
-                                <img src={brand_4} alt="" className='w-10/12' />
+                                <img src={brand_4} alt="" className='' />
                             </div>
                             <div className='p-2 rounded-xl bg-purple-50'>
-                                <img src={brand_5} alt="" className='w-10/12' />
+                                <img src={brand_5} alt="" className='' />
                             </div>
                             <div className='p-2 rounded-xl bg-purple-50'>
-                                <img src={brand_6} alt="" className='w-10/12' />
+                                <img src={brand_6} alt="" className='' />
                             </div>
                         </div>
 
                         <div className="flex flex-col gap-5">
                             <div className='flex gap-12'>
-                                <div className='p-2 rounded-xl bg-purple-50'>
-                                    <img src={brand_9} alt="" className='flex mx-auto w-1/2 ' />
+                                <div className='p-1 rounded-xl bg-purple-50'>
+                                    <img src={brand_9} alt="" className='flex mx-auto' />
                                 </div>
-                                <div className='p-2 rounded-xl bg-purple-50'>
-                                    <img src={brand_10} alt="" className=' flex mx-auto w-5/12 ' />
+                                <div className='p-1 rounded-xl bg-purple-50'>
+                                    <img src={brand_10} alt="" className=' flex mx-auto ' />
                                 </div>
                             </div>
                             <div className='flex gap-12'>
-                                <div className='p-2 rounded-xl bg-purple-50 sm:w-1/3'>
+                                <div className='p-1 rounded-xl bg-purple-50'>
                                     <img src={brand_7} alt="" className='flex mx-auto ' />
                                 </div>
-                                <div className='p-1.5 rounded-xl bg-purple-50'>
-                                    <img src={brand_8} alt="" className='flex mx-auto w-1/2' />
+                                <div className='p-1 rounded-xl bg-purple-50'>
+                                    <img src={brand_8} alt="" className='flex mx-auto ' />
                                 </div>
                             </div>
-                            <div className='flex items-center justify-center w-9/12 p-2 rounded-lg bg-purple-50'>
-                                <img src={brand_11} alt="" className='' />
+                            <div className='flex items-center justify-center rounded-lg bg-purple-50'>
+                                <img src={brand_11} alt="" className='flex mx-uto' />
                             </div>
                         </div>
 
