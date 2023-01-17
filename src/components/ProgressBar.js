@@ -31,68 +31,68 @@ function ProgressBar() {
 
     return (
         <div>
-            <div style={{ color: "#fff", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center", columnGap: "50px", rowGap: "30px", flexWrap: "wrap" }}>
-                <div style={{ width: 150 }}>
+            <div style={{ color: "#fff", textAlign: "center", display: "flex", alignItems: "baseline", justifyContent: "center", columnGap: "50px", rowGap: "30px", flexWrap: "wrap" }}>
+                <div style={{ width: 150, display: "flex", flexDirection: "column", alignItems: "center", rowGap: "25px", }}>
                     <CircularProgressbar value={percentage} text={`${percentage}%`} styles={buildStyles({
                         textColor: '#fff',
                         pathColor: '#F86CF8',
                     })} />
-                    <i style={{ marginTop: "20px" }}>CEX Reserve</i>
+                    <i>CEX Reserve</i>
                 </div>
 
 
-                <div style={{ width: 150 }}>
+                <div style={{ width: 150, display: "flex", flexDirection: "column", alignItems: "center", rowGap: "25px", }}>
                     <CircularProgressbar value={percentage4} text={`${percentage4}%`} styles={buildStyles({
                         textColor: '#fff',
                         pathColor: '#F86CF8',
                     })} />
-                    <i style={{ marginTop: "20px" }}>Liquidity</i>
+                    <i>Liquidity</i>
                 </div>
 
-                <div style={{ width: 150 }}>
+                <div style={{ width: 150, display: "flex", flexDirection: "column", alignItems: "center", rowGap: "25px", }}>
                     <CircularProgressbar value={percentage2} text={`${percentage2}%`} styles={buildStyles({
                         textColor: '#fff',
                         pathColor: '#F86CF8',
                     })} />
-                    <i style={{ marginTop: "20px" }}>Public sale
+                    <i>Public sale
                         Tokens</i>
                 </div>
 
-                <div style={{ width: 150 }}>
+                <div style={{ width: 150, display: "flex", flexDirection: "column", alignItems: "center", rowGap: "25px", }}>
                     <CircularProgressbar value={percentage4} text={`${percentage4}%`} styles={buildStyles({
                         textColor: '#fff',
                         pathColor: '#F86CF8',
                     })} />
-                    <i style={{ marginTop: "20px" }}>Initial Burn</i>
+                    <i>Initial Burn</i>
                 </div>
             </div >
 
-            <div style={{ color: "#fff", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center", columnGap: "50px", marginTop: "50px", rowGap: "30px", flexWrap: "wrap"}}>
-                <div style={{ width: 150 }}>
+            <div style={{ color: "#fff", textAlign: "center", display: "flex", alignItems: "baseline", justifyContent: "center", columnGap: "50px", marginTop: "60px", rowGap: "30px", flexWrap: "wrap"}}>
+                <div style={{ width: 150, display: "flex", flexDirection: "column", alignItems: "center", rowGap: "25px", }}>
                     <CircularProgressbar value={percentage} text={`${percentage}%`} styles={buildStyles({
                         textColor: '#fff',
                         pathColor: '#F86CF8',
                     })} />
-                    <i style={{ marginTop: "20px" }}>Staking
+                    <i>Staking
                         Reserve</i>
                 </div>
 
 
-                <div style={{ width: 150 }}>
+                <div style={{ width: 150, display: "flex", flexDirection: "column", alignItems: "center", rowGap: "25px", }}>
                     <CircularProgressbar value={percentage3} text={`${percentage3}%`} styles={buildStyles({
                         textColor: '#fff',
                         pathColor: '#F86CF8',
                     })} />
-                    <i style={{ marginTop: "20px" }}>Reward
+                    <i>Reward
                         Reserve</i>
                 </div>
 
-                <div style={{ width: 150 }}>
+                <div style={{ width: 150, display: "flex", flexDirection: "column", alignItems: "center", rowGap: "25px", }}>
                     <CircularProgressbar value={percentage3} text={`${percentage3}%`} styles={buildStyles({
                         textColor: '#fff',
                         pathColor: '#F86CF8',
                     })} />
-                    <i style={{ marginTop: "20px" }}>Developement
+                    <i>Developement
                         Reserve</i>
                 </div>
 

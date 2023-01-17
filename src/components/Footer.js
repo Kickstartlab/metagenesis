@@ -28,10 +28,10 @@ export default function Footer() {
               About Us
             </h4> */}
             <ul>
-              <li className='pb-3'>About</li>
-              <li className='pb-3'>Partners</li>
-              <li className='pb-3'>Tokenomics</li>
-              <li className='pb-3'>Roadmap</li>
+              <a href="#about"><li className='pb-3'>About</li></a>
+              <a href="#partners"><li className='pb-3'>Partners</li></a>
+              <a href="#tokenomics"><li className='pb-3'>Tokenomics</li></a>
+              <a href="#roadmap"><li className='pb-3'>Roadmap</li></a>
             </ul>
           </div>
 
@@ -40,10 +40,10 @@ export default function Footer() {
               Services
             </h4> */}
             <ul>
-              <li className='pb-3'>NFT Marketplace</li>
-              <li className='pb-3'>Roadmap</li>
-              <li className='pb-3'>Meta Genesis Chain</li>
-              <li className='pb-3'>Metaverse</li>
+              <a href="#nft"><li className='pb-3'>NFT Marketplace</li></a>
+              <a href="#roadmap"><li className='pb-3'>Roadmap</li></a>
+              <a href="#chain"><li className='pb-3'>Meta Genesis Chain</li></a>
+              <a href="#metaverse"><li className='pb-3'>Metaverse</li></a>
             </ul>
           </div>
 

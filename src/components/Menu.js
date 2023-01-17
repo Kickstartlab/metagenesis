@@ -21,7 +21,7 @@ export default function Menu() {
           <ul className="text-md flex justify-center gap-8 items-center">
             <li><a href="/" className="text-zinc-100">Home</a></li>
             <li><a href="#nft" className="hover:text-seagreen-100 cursor-pointer">NFT 's</a></li>
-            <li><a href="#tokenommics" className="hover:text-seagreen-100 cursor-pointer">Tokenomics</a></li>
+            <li><a href="#tokenomics" className="hover:text-seagreen-100 cursor-pointer">Tokenomics</a></li>
             <li><a href="#roadmap" className="hover:text-seagreen-100 cursor-pointer">Roadmap</a></li>
             <li><a href="#about" className="hover:text-seagreen-100 cursor-pointer">About Us</a></li>
           </ul>

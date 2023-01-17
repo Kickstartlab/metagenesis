@@ -45,7 +45,6 @@ export default function Home() {
             {/* top section */}
 
             <div className="lg:px-20 px-5 bg-top">
-
                 <div className='container mx-auto'>
 
                     <Menu />
@@ -111,7 +110,7 @@ export default function Home() {
                 </div>
             </div>
 
-            {/* what is meta genesis */}
+            {/* meta genesis Infrastructure*/}
 
             <div className="">
                 <div className="lg:pb-12 pb-0 lg:px-20 px-5 container mx-auto">
@@ -137,7 +136,7 @@ export default function Home() {
                             </p>
 
                             <div className="flex items-center gap-8 font-poppins">
-                                <a href="https://docs.metagenesistoken.com/">
+                                <a href="https://docs.metagenesistoken.com">
                                     <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 flex gap-2 items-center py-2 lg:px-8 px-4 rounded-sm font-semibold mt-5">
                                         Whitepaper
                                         <span><svg width="12" height="13" viewBox="0 0 12 13" class="mt-1" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -168,7 +167,7 @@ export default function Home() {
 
             {/* metaverse section */}
 
-            <div className="bg-side lg:pt-8 lg:px-0 px-5">
+            <div id='metaverse' className="bg-side lg:pt-8 lg:px-0 px-5">
                 <div className="container mx-auto">
 
                     <div className="lg:flex block items-center justify-center">
@@ -218,11 +217,11 @@ export default function Home() {
 
             {/*  META GENESIS NFT’s */}
 
-            <div className="">
+            <div  id='nft' className="">
                 <div className="pb-12 lg:px-16 px-5 container mx-auto">
                     <div className="lg:flex block justify-between items-center py-12">
 
-                        <div id='nft' data-aos="fade-left" className='lg:w-1/2 w-full text-white-100'>
+                        <div data-aos="fade-left" className='lg:w-1/2 w-full text-white-100'>
                             <h3 className="text-white-100 color-gradient text-3xl md:text-5xl font-bold font-orbitron color-gradient">
                                 Meta Genesis NFT's
                             </h3>
@@ -258,7 +257,7 @@ export default function Home() {
 
             {/* META GENESIS Launchpad */}
 
-            <div className="bg-side-2">
+            <div id='chain' className="bg-side-2">
                 <div className="lg:px-16 lg:py-12 py-5 px-5 container mx-auto">
                     <div className="lg:flex block justify-between items-center">
                         <div data-aos="fade-left" className="lg:w-1/2 w-full">
@@ -522,7 +521,7 @@ export default function Home() {
 
             {/* partners and supporters */}
 
-            <div className="bg-side">
+            <div id='partners' className="bg-side">
 
                 <div className="lg:px-16 lg:py-12 py-5 px-5 container mx-auto">
 
@@ -533,47 +532,47 @@ export default function Home() {
                     <div data-aos="zoom-out" className="flex gap-6 items-center justify-center py-12">
 
                         <div className="flex flex-col gap-y-5">
-                            <div className='p-2 rounded-lg bg-purple-50'>
+                            <div className='p-2 rounded-xl bg-purple-50'>
                                 <img src={brand_1} alt="" className='w-10/12' />
                             </div>
-                            <div className='p-3 rounded-lg bg-purple-50'>
+                            <div className='p-3 rounded-xl bg-purple-50'>
                                 <img src={brand_2} alt="" className='w-8/12 pl-3' />
                             </div>
-                            <div className='p-2 rounded-lg bg-purple-50'>
+                            <div className='p-2 rounded-xl bg-purple-50'>
                                 <img src={brand_3} alt="" className='w-10/12' />
                             </div>
                         </div>
 
                         <div className="flex flex-col gap-y-5">
-                            <div className='rounded-lg bg-purple-50'>
+                            <div className='rounded-xl bg-purple-50'>
                                 <img src={brand_4} alt="" className='w-10/12' />
                             </div>
-                            <div className='p-2 rounded-lg bg-purple-50'>
+                            <div className='p-2 rounded-xl bg-purple-50'>
                                 <img src={brand_5} alt="" className='w-10/12' />
                             </div>
-                            <div className='p-2 rounded-lg bg-purple-50'>
+                            <div className='p-2 rounded-xl bg-purple-50'>
                                 <img src={brand_6} alt="" className='w-10/12' />
                             </div>
                         </div>
 
                         <div className="flex flex-col gap-5">
-                            <div className='flex gap-5'>
-                                <div className='p-2 rounded-lg bg-purple-50'>
+                            <div className='flex gap-12'>
+                                <div className='p-2 rounded-xl bg-purple-50'>
                                     <img src={brand_9} alt="" className='flex mx-auto w-1/2 ' />
                                 </div>
-                                <div className='p-2 rounded-lg bg-purple-50'>
+                                <div className='p-2 rounded-xl bg-purple-50'>
                                     <img src={brand_10} alt="" className=' flex mx-auto w-5/12 ' />
                                 </div>
                             </div>
-                            <div className='flex gap-5'>
-                                <div className='p-2 rounded-lg bg-purple-50 w-1/3'>
+                            <div className='flex gap-12'>
+                                <div className='p-2 rounded-xl bg-purple-50 w-1/3'>
                                     <img src={brand_7} alt="" className='flex mx-auto ' />
                                 </div>
-                                <div className='p-2 rounded-lg bg-purple-50'>
+                                <div className='p-1.5 rounded-xl bg-purple-50'>
                                     <img src={brand_8} alt="" className='flex mx-auto w-1/2' />
                                 </div>
                             </div>
-                            <div className='flex items-center justify-center  p-2 rounded-lg bg-purple-50 w-9/12'>
+                            <div className='flex items-center justify-center w-9/12 p-2 rounded-lg bg-purple-50'>
                                 <img src={brand_11} alt="" className='' />
                             </div>
                         </div>
