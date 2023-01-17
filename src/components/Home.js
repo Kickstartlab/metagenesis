@@ -5,9 +5,6 @@ import top from '../assets/top.png';
 import meta from '../assets/meta.png';
 import star from '../assets/star.png';
 import globe from '../assets/globe.png';
-import meta_1 from '../assets/meta-1.png';
-import meta_2 from '../assets/meta-2.png';
-import metaverse from '../assets/metaverse.png';
 import ai from '../assets/ai.png';
 import nft from '../assets/nft.png';
 import launch from '../assets/launch.png';
@@ -26,12 +23,23 @@ import lock from '../assets/lock.png';
 import video from '../assets/video.mp4';
 import roadmap from '../assets/roadmap.png';
 import ecosystem from '../assets/ecosystem.png';
-import Slider from './Slider'
+import Slider from './Slider';
+import { useEffect } from 'react';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
 
+    useEffect(() => {
+        Aos.init({
+            duration: 3000,
+            once: true
+        });
+        Aos.refresh();
+    }, [])
+
     return (
-        <div className="bg-black-100">
+        <div className="bg-black-100 overflow-hidden">
 
             {/* top section */}
 
@@ -41,7 +49,7 @@ export default function Home() {
 
                     <Menu />
                     <div className="lg:flex block justify-between items-center py-12">
-                        <div className="lg:w-1/2 w-full">
+                        <div data-aos="fade-left" className="lg:w-1/2 w-full">
                             <h2 className='md:text-5xl text-3xl font-orbitron font-semibold text-white-100'>
                                 Bringing you connections & experiences out of this <span className='color-gradient'>World</span>
                             </h2>
@@ -64,7 +72,7 @@ export default function Home() {
 
                         </div>
 
-                        <div className="img md:mt-0 mt-12 font-poppins">
+                        <div data-aos="fade-right" className="img md:mt-0 mt-12 font-poppins">
                             <img src={top} alt="Logo" />
                             <img src={star} alt="Logo" className='absolute top-40 mt-16 lg:block hidden' />
                         </div>
@@ -73,18 +81,18 @@ export default function Home() {
                 </div>
             </div>
 
-            <video width="1297" height="654" controls="" class="rounded-4xl my-8"><source src={video} type="video/mp4" />Error Message</video>
+            <video data-aos="zoom-out" width="1440" height="654" controls className="flex mx-auto my-8"><source src={video} type="video/mp4" />Error Message</video>
 
             {/* what is meta genesis */}
 
             <div className="bg-side-2">
                 <div className="lg:py-12 py-0 lg:px-16 px-5 container mx-auto">
                     <div className="lg:flex block justify-between items-center py-12">
-                        <div className="lg:w-1/2 w-full">
+                        <div data-aos="zoom-out" className="lg:w-1/2 w-full">
                             <img src={meta} alt="Logo" />
                         </div>
 
-                        <div className='lg:w-1/3 w-full text-white-100 lg:pt-0 pt-12'>
+                        <div data-aos="fade-right" className='lg:w-1/3 w-full text-white-100 lg:pt-0 pt-12'>
                             <h2 className='md:text-5xl text-3xl font-orbitron font-semibold'>
                                 What is <span className='color-gradient'>META GENESIS</span>
                             </h2>
@@ -108,7 +116,7 @@ export default function Home() {
                 <div className="lg:pb-12 pb-0 lg:px-20 px-5 container mx-auto">
                     <div className="lg:flex block justify-between items-center py-12">
 
-                        <div className='lg:w-1/2 w-full text-white-100'>
+                        <div data-aos="fade-left" className='lg:w-1/2 w-full text-white-100'>
                             <h2 className='md:text-5xl text-3xl font-orbitron font-semibold'>
                                 <span className='color-gradient'>META GENESIS</span> Infrastructure
                                 for billions of users.
@@ -128,7 +136,7 @@ export default function Home() {
                             </p>
                         </div>
 
-                        <div className="lg:w-1/3 w-full">
+                        <div data-aos="fade-right" className="lg:w-1/3 w-full">
                             <img src={globe} alt="Logo" />
                         </div>
                     </div>
@@ -140,28 +148,19 @@ export default function Home() {
             <div className="bg-side lg:pt-8 lg:px-0 px-5">
                 <div className="container mx-auto">
 
-                    <div className="lg:flex block items-center ">
-
-                        <div>
-                            <img src={metaverse} alt="" />
-                        </div>
+                    <div className="lg:flex block items-center justify-center">
 
                         <div className='lg:w-8/12 w-full'>
                             <div className="text-center py-8">
-                                <h3 className="text-white-100 text-center text-3xl md:text-6xl font-bold font-orbitron color-gradient">MetaGenesis Metaverse</h3>
+                                <h3 data-aos="fade-down" className="text-white-100 text-center text-3xl md:text-6xl font-bold font-orbitron color-gradient">Meta Genesis Metaverse</h3>
 
-                                <p className="py-4 leading-loose font-poppins text-white-100 flex mx-auto">
+                                <p data-aos="fade-up" className="py-4 leading-loose font-poppins text-white-100 flex mx-auto">
                                     $MGenesis Metaverse app will be a device-ready Metaverse platform, consisting of Avatars, Lands, Worlds, various
                                     NFT items, and unlimited Games. It will empowers and connect creators and users on its Create to Earn, Build to
                                     Earn ecosystem. Community will be able to travel to different locations via portals to enjoy different features of the
                                     metaverse.
 
                                 </p>
-                            </div>
-
-                            <div className="flex items-center justify-center gap-3 py-8">
-                                <img src={meta_1} alt="" />
-                                <img src={meta_2} alt="" />
                             </div>
                         </div>
                     </div>
@@ -175,11 +174,11 @@ export default function Home() {
             <div className="bg-side-2">
                 <div className="lg:px-16 px-5 container mx-auto">
                     <div className="lg:flex block justify-between items-center">
-                        <div className="lg:w-1/2 w-full">
+                        <div data-aos="fade-left" className="lg:w-1/2 w-full">
                             <img src={ai} alt="Logo" />
                         </div>
 
-                        <div className='lg:w-1/2 w-full text-white-100'>
+                        <div data-aos="fade-right" className='lg:w-1/2 w-full text-white-100'>
                             <h2 className='color-gradient md:text-5xl text-3xl font-orbitron font-semibold lg:text-right'>
                                 META GENESIS Builder
                             </h2>
@@ -200,9 +199,9 @@ export default function Home() {
                 <div className="pb-12 lg:px-16 px-5 container mx-auto">
                     <div className="lg:flex block justify-between items-center py-12">
 
-                        <div className='lg:w-1/2 w-full text-white-100'>
+                        <div data-aos="fade-left" className='lg:w-1/2 w-full text-white-100'>
                             <h3 className="text-white-100 color-gradient text-3xl md:text-6xl font-bold font-orbitron color-gradient">
-                                MetaGenesis NFT Marketplace
+                                Meta Genesis NFT Marketplace
                             </h3>
 
                             <p className="py-5 font-poppins">
@@ -216,7 +215,8 @@ export default function Home() {
 
                         </div>
 
-                        <div className="flex items-center justify-center gap-3 py-8">
+                        <div data-aos="fade-right" className="flex items-center justify-center gap-3 py-8">
+                            
                             <img src={nft} alt="" />
                         </div>
 
@@ -224,11 +224,11 @@ export default function Home() {
 
                     {/* slider section */}
 
-                    <div className="lg:pt-12 pt-5 lg:pb-20 pb-5">
+                    <div data-aos="zoom-in" className="lg:pt-12 pt-5 lg:pb-20 pb-5">
                         <Slider />
                     </div>
 
-                    <video width="1297" height="654" controls="" class="rounded-4xl my-8 aos-init aos-animate" data-aos="zoom-out"><source src={video} type="video/mp4" />Error Message</video>
+                    <video data-aos="zoom-out" width="1297" height="654" controls className="rounded-2xl my-8"><source src={video} type="video/mp4" />Error Message</video>
                 </div>
 
             </div>
@@ -238,11 +238,11 @@ export default function Home() {
             <div className="bg-side-2">
                 <div className="lg:px-16 lg:py-12 py-5 px-5 container mx-auto">
                     <div className="lg:flex block justify-between items-center">
-                        <div className="lg:w-1/2 w-full">
+                        <div data-aos="fade-left" className="lg:w-1/2 w-full">
                             <img src={launch} alt="Logo" />
                         </div>
 
-                        <div className='lg:w-1/2 w-full text-white-100 float-right lg:py-0 py-12'>
+                        <div data-aos="fade-light" className='lg:w-1/2 w-full text-white-100 float-right lg:py-0 py-12'>
                             <h2 className='color-gradient md:text-5xl text-3xl font-orbitron font-semibold lg:text-right'>
                                 META GENESIS
                                 Launchpad
@@ -261,7 +261,7 @@ export default function Home() {
                     <div className="lg:py-12 py-5 container mx-auto">
                         <div className="lg:flex items-center justify-between">
 
-                            <div className='text-white-100 lg:py-0 py-12'>
+                            <div data-aos="fade-left" className='text-white-100 lg:py-0 py-12'>
                                 <h2 className='color-gradient md:text-5xl text-3xl font-orbitron font-semibold'>
                                     ECOSYSTEM
                                 </h2>
@@ -279,7 +279,7 @@ export default function Home() {
 
                             </div>
 
-                            <img src={ecosystem} alt="" className='w-6/12 lg:block flex mx-auto' />
+                            <img data-aos="fade-right" src={ecosystem} alt="" className='w-6/12 lg:block flex mx-auto' />
                         </div>
 
                     </div>
@@ -294,15 +294,15 @@ export default function Home() {
                 <div className="lg:px-16 lg:py-12 py-5 px-5 container mx-auto">
 
                     <div className='text-white-100 lg:w-1/2 w-full text-center flex flex-col items-center justify-center mx-auto'>
-                        <h2 className='color-gradient md:text-5xl text-3xl font-orbitron font-semibold'>
+                        <h2 data-aos="fade-down" className='color-gradient md:text-5xl text-3xl font-orbitron font-semibold'>
                             TOKENOMICS
                         </h2>
 
-                        <p className='py-6 font-poppins font-bold'>
+                        <p data-aos="fade-up" className='py-6 font-poppins font-bold'>
                             MetaGenesis is aspire to be the most successful project of 2023. Our Tokenomics have been designed to support sustainable growth and development of the project.
                         </p>
 
-                        <p className='py-6 font-poppins font-bold text-lg'>
+                        <p data-aos="zoom-out" className='py-6 font-poppins font-bold text-lg'>
                             Token name: MetaGenesis | Ticker Symbol: $MGENESIS
                             Blockchain: Binance Smart Chain (BEP-20)
                             Total Supply: 100 Million (100,000,000)
@@ -320,12 +320,12 @@ export default function Home() {
 
                     <div className="lg:px-16 lg:py-12 py-5 px-5 container mx-auto">
 
-                        <div className='text-white-100 text-center flex flex-col items-center justify-center mx-auto'>
-                            <h2 className='color-gradient md:text-5xl text-3xl font-orbitron font-semibold'>
+                        <div data-aos="slide-top" className='text-white-100 text-center flex flex-col items-center justify-center mx-auto'>
+                            <h2 data-aos="slide-top" className='color-gradient md:text-5xl text-3xl font-orbitron font-semibold'>
                                 TOKEN DISTRIBUTION
                             </h2>
 
-                            <p className='py-6 font-poppins lg:w-1/2 w-full font-bold text-lg'>
+                            <p data-aos="slide-bottom" className='py-6 font-poppins lg:w-1/2 w-full font-bold text-lg'>
                                 Public Sale tokens : 30% | Liquidity: 20% | Staking Reserve: 10%
                                 CEX Reserve: 10% | Reward Reserve: 5% | Development Reserve: 5% | Initial Burn: 20%
                             </p>
@@ -433,7 +433,7 @@ export default function Home() {
             <div className="bg-side">
                 <div className="lg:px-16 lg:py-12 py-5 px-5 container mx-auto">
 
-                    <div className='text-white-100 lg:py-0 py-12'>
+                    <div data-aos="fade-left" className='text-white-100 lg:py-0 py-12'>
                         <h2 className='color-gradient md:text-5xl text-3xl font-orbitron font-semibold'>
                             SECURITY & <br></br>SAFETY CERTIFICATION
                         </h2>
@@ -464,7 +464,7 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="lg:w-1/2 w-full lg:mt-0 mt-6">
+                            <div data-aos="fade-right" className="lg:w-1/2 w-full lg:mt-0 mt-6">
                                 <img src={lock} alt="Logo" />
                             </div>
                         </div>
@@ -479,13 +479,13 @@ export default function Home() {
             <div className="bg-side-2">
                 <div className="lg:px-16 lg:py-12 py-5 px-5 container mx-auto">
 
-                    <h2 className='color-gradient md:text-5xl text-3xl text-center font-orbitron font-semibold'>
+                    <h2 data-aos="slide-top" className='color-gradient md:text-5xl text-3xl text-center font-orbitron font-semibold'>
                         ROADMAP
                     </h2>
 
                     <div className="lg:flex gap-24 py-12 lg:px-24">
 
-                        <div className="text-white-100">
+                        <div data-aos="fade-up" className="text-white-100">
                             <h5 className="text-xl font-orbitron font-semibold">
                                 Phase 2
                             </h5>
@@ -508,7 +508,7 @@ export default function Home() {
                             </ul>
                         </div>
 
-                        <div className="text-white-100 lg:pt-0 pt-6">
+                        <div data-aos="fade-up" className="text-white-100 lg:pt-0 pt-6">
                             <h5 className="text-xl font-orbitron font-semibold">
                                 Phase 3
                             </h5>
@@ -537,7 +537,7 @@ export default function Home() {
                             <img src={roadmap} alt="" />
                         </div>
 
-                        <div className="text-white-100">
+                        <div data-aos="fade-down" className="text-white-100">
                             <h5 className="text-xl font-orbitron font-semibold">
                                 Phase 4
                             </h5>
@@ -555,7 +555,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="text-white-100 lg:pt-0 pt-6">
+                    <div data-aos="fade-down" className="text-white-100 lg:pt-0 pt-6">
                         <h5 className="text-xl font-orbitron font-semibold">
                             Phase 1
                         </h5>
@@ -589,11 +589,11 @@ export default function Home() {
 
                 <div className="lg:px-16 lg:py-12 py-5 px-5 container mx-auto">
 
-                    <h2 className='color-gradient md:text-5xl text-3xl font-orbitron font-semibold text-center'>
+                    <h2 data-aos="fade-down"  className='color-gradient md:text-5xl text-3xl font-orbitron font-semibold text-center'>
                         SECURITY & <br></br>SAFETY CERTIFICATION
                     </h2>
 
-                    <div className="flex gap-6 items-center justify-center py-8">
+                    <div data-aos="zoom-out" className="flex gap-6 items-center justify-center py-8">
 
                         <div className="flex flex-col gap-y-5">
                             <div className='p-2 rounded-lg bg-purple-200'>
@@ -621,7 +621,7 @@ export default function Home() {
 
                         <div className="flex flex-col gap-y-5">
                             <div className='p-2 rounded-lg bg-purple-200'>
-                                <img src={brand_7} alt="" className='w-1/2 flex mx-auto' />
+                                <img src={brand_7} alt="" className='flex mx-auto' />
                             </div>
                             <div className='p-2 rounded-lg bg-purple-200'>
                                 <img src={brand_8} alt="" className='w-1/2 flex mx-auto' />
@@ -631,26 +631,26 @@ export default function Home() {
 
                         <div className="flex flex-col gap-y-5">
                             <div className='p-2 rounded-lg bg-purple-200'>
-                                <img src={brand_9} alt="" className='w-9/12 flex mx-auto' />
+                                <img src={brand_9} alt="" className='flex mx-auto' />
                             </div>
                             <div className='p-2 rounded-lg bg-purple-200'>
-                                <img src={brand_10} alt="" className='w-9/12 flex mx-auto' />
+                                <img src={brand_10} alt="" className=' flex mx-auto' />
                             </div>
                         </div>
 
                     </div>
-                    <img src={brand_11} alt="" className='flex mx-auto p-2 rounded-lg bg-purple-200 mt-3' />
+                    <img data-aos="fade-up"  src={brand_11} alt="" className='flex mx-auto p-2 rounded-lg bg-purple-200 mt-3' />
 
                 </div>
 
                 {/* JOIN US NOW */}
 
                 <div className='text-white-100 text-center flex flex-col items-center justify-center mx-auto'>
-                    <h2 className='color-gradient md:text-5xl text-3xl font-orbitron font-semibold'>
+                    <h2 data-aos="fade-up"  className='color-gradient md:text-5xl text-3xl font-orbitron font-semibold'>
                         JOIN US NOW
                     </h2>
 
-                    <p className='lg:py-12 py-5 font-poppins lg:w-1/2 w-full font-bold md:text-xl text-medium'>
+                    <p data-aos="fade-down" className='lg:py-12 py-5 font-poppins lg:w-1/2 w-full font-bold md:text-xl text-medium'>
                         Community is always First! Our community is growing stronger by the day.
                         If you want to ask a question or meet other people with a similar world-view,
                         join our social media channels.
