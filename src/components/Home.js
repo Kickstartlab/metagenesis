@@ -217,7 +217,7 @@ export default function Home() {
 
             {/*  META GENESIS NFT’s */}
 
-            <div  id='nft' className="">
+            <div id='nft' className="">
                 <div className="pb-12 lg:px-16 px-5 container mx-auto">
                     <div className="lg:flex block justify-between items-center py-12">
 
@@ -419,7 +419,135 @@ export default function Home() {
                         ROADMAP
                     </h2>
 
-                    <div className="lg:flex gap-24 py-12 lg:px-24 px-5">
+                    <div className="lg:block hidden">
+
+                        <div className="lg:flex gap-24 py-12 lg:px-24 px-5">
+
+                            <div data-aos="fade-up" className="text-white-100">
+                                <h5 className="text-xl font-orbitron font-semibold">
+                                    Phase 2
+                                </h5>
+                                <ul className='list-disc font-poppins pt-3'>
+                                    <li>
+                                        Listing on Tier-1 CEXs
+                                    </li>
+                                    <li>
+                                        MGEN Chain Launch
+                                    </li>
+                                    <li>
+                                        Social Media Ads Campaign
+                                    </li>
+                                    <li>
+                                        Viral Twitter Marketing Campaign
+                                    </li>
+                                    <li>
+                                        Paid Marketing & Media Campaign
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div data-aos="fade-up" className="text-white-100 lg:pt-0 pt-6">
+                                <h5 className="text-xl font-orbitron font-semibold">
+                                    Phase 3
+                                </h5>
+                                <ul className='list-disc font-poppins pt-3'>
+
+                                    <li>
+                                        V2 Whitepaper Release - Celebrity Partnership
+                                    </li>
+                                    <li>
+                                        MGEN Builder
+                                    </li>
+                                    <li>
+                                        Website 2.0 Release
+                                    </li>
+                                    <li>
+                                        Further Tier-1 Exchange Listing - Certik Audit
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div className="lg:flex gap-3 px-5">
+
+                            <div className="lg:block hidden">
+                                <img src={roadmap} alt="" />
+                            </div>
+
+                            <div data-aos="fade-down" className="text-white-100">
+                                <h5 className="text-xl font-orbitron font-semibold">
+                                    Phase 4
+                                </h5>
+                                <ul className='list-disc font-poppins pt-3'>
+                                    <li>
+                                        Expanding Ecosystem
+                                    </li>
+                                    <li>
+                                        MGEN Metaverse app
+                                    </li>
+                                    <li>
+                                        Sponsorship and Partnership Worldwide - Celebrity Brand Ambassdors
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-down" className="text-white-100 lg:pt-0 pt-6 sm:px-5">
+                            <h5 className="text-xl font-orbitron font-semibold">
+                                Phase 1
+                            </h5>
+                            <ul className='list-disc font-poppins pt-3'>
+                                <li>
+                                    Website and Community Building - Pinksale Fair Launch
+                                </li>
+                                <li>
+                                    DEX Launching
+                                </li>
+                                <li>
+                                    Global Marketing Campaign
+                                </li>
+                                <li>
+                                    CoinMarketCap & CoinGecko Listing - TechRate/InterFi Contract Audit
+                                </li>
+                                <li>
+                                    MGEN NFT Marketplace
+                                </li>
+                                <li>
+                                    BSCScan Verification
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div className="lg:hidden flex flex-col gap-y-6 px-5 pt-6">
+
+                        <div data-aos="fade-down" className="text-white-100">
+                            <h5 className="text-xl font-orbitron font-semibold">
+                                Phase 1
+                            </h5>
+                            <ul className='list-disc font-poppins pt-3'>
+                                <li>
+                                    Website and Community Building - Pinksale Fair Launch
+                                </li>
+                                <li>
+                                    DEX Launching
+                                </li>
+                                <li>
+                                    Global Marketing Campaign
+                                </li>
+                                <li>
+                                    CoinMarketCap & CoinGecko Listing - TechRate/InterFi Contract Audit
+                                </li>
+                                <li>
+                                    MGEN NFT Marketplace
+                                </li>
+                                <li>
+                                    BSCScan Verification
+                                </li>
+                            </ul>
+                        </div>
 
                         <div data-aos="fade-up" className="text-white-100">
                             <h5 className="text-xl font-orbitron font-semibold">
@@ -444,7 +572,7 @@ export default function Home() {
                             </ul>
                         </div>
 
-                        <div data-aos="fade-up" className="text-white-100 lg:pt-0 pt-6">
+                        <div data-aos="fade-up" className="text-white-100">
                             <h5 className="text-xl font-orbitron font-semibold">
                                 Phase 3
                             </h5>
@@ -464,14 +592,6 @@ export default function Home() {
                                 </li>
                             </ul>
                         </div>
-                    </div>
-
-
-                    <div className="lg:flex gap-3 px-5">
-
-                        <div className="lg:block hidden">
-                            <img src={roadmap} alt="" />
-                        </div>
 
                         <div data-aos="fade-down" className="text-white-100">
                             <h5 className="text-xl font-orbitron font-semibold">
@@ -489,33 +609,9 @@ export default function Home() {
                                 </li>
                             </ul>
                         </div>
+
                     </div>
 
-                    <div data-aos="fade-down" className="text-white-100 lg:pt-0 pt-6">
-                        <h5 className="text-xl font-orbitron font-semibold">
-                            Phase 1
-                        </h5>
-                        <ul className='list-disc font-poppins pt-3'>
-                            <li>
-                                Website and Community Building - Pinksale Fair Launch
-                            </li>
-                            <li>
-                                DEX Launching
-                            </li>
-                            <li>
-                                Global Marketing Campaign
-                            </li>
-                            <li>
-                                CoinMarketCap & CoinGecko Listing - TechRate/InterFi Contract Audit
-                            </li>
-                            <li>
-                                MGEN NFT Marketplace
-                            </li>
-                            <li>
-                                BSCScan Verification
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
 
@@ -529,50 +625,50 @@ export default function Home() {
                         PARTNERS & SUPPORTERS
                     </h2>
 
-                    <div data-aos="zoom-out" className="grid lg:grid-cols-3 grid-cols-1 gap-6 place-items-center justify-content-center py-12">
+                    <div data-aos="zoom-out" className="grid grid-cols-3 gap-6 place-items-center justify-content-center py-12">
 
                         <div className="flex flex-col gap-5">
-                            <div className='p-2 rounded-xl bg-purple-50'>
-                                <img src={brand_1} alt="" className='' />
-                            </div>
-                            <div className='p-3 rounded-xl bg-purple-50'>
-                                <img src={brand_2} alt="" className='w-8/12 pl-3' />
-                            </div>
-                            <div className='p-2 rounded-xl bg-purple-50'>
-                                <img src={brand_3} alt="" className='' />
+                            <a href='https://trustwallet.com/' className='py-2 rounded-xl bg-purple-50 lg:px-6'>
+                                <img src={brand_1} alt="" className='flex mx-auto' />
+                            </a>
+                            <a href='https://bscscan.com/' className='py-3 rounded-xl bg-purple-50 lg:px-6'>
+                                <img src={brand_2} alt="" className='flex mx-auto' />
+                            </a>
+                            <div className='py-2 rounded-xl bg-purple-50 lg:px-6'>
+                                <img src={brand_3} alt="" className='flex mx-auto' />
                             </div>
                         </div>
 
                         <div className="flex flex-col gap-5">
-                            <div className='rounded-xl bg-purple-50'>
-                                <img src={brand_4} alt="" className='' />
+                            <div className='rounded-xl bg-purple-50 py-2 lg:px-6'>
+                                <img src={brand_4} alt="" className='flex mx-auto' />
                             </div>
-                            <div className='p-2 rounded-xl bg-purple-50'>
-                                <img src={brand_5} alt="" className='' />
+                            <div className='py-2 rounded-xl bg-purple-50 lg:px-6'>
+                                <img src={brand_5} alt="" className='flex mx-auto' />
                             </div>
-                            <div className='p-2 rounded-xl bg-purple-50'>
-                                <img src={brand_6} alt="" className='' />
+                            <div className='py-2 rounded-xl bg-purple-50 lg:px-6'>
+                                <img src={brand_6} alt="" className='flex mx-auto' />
                             </div>
                         </div>
 
                         <div className="flex flex-col gap-5">
-                            <div className='flex gap-12'>
-                                <div className='p-1 rounded-xl bg-purple-50'>
+                            <div className='flex lg:gap-12 gap-2'>
+                                <div className='py-1 lg:px-6 rounded-xl bg-purple-50'>
                                     <img src={brand_9} alt="" className='flex mx-auto' />
                                 </div>
-                                <div className='p-1 rounded-xl bg-purple-50'>
+                                <div className='py-1 lg:px-6 rounded-xl bg-purple-50'>
                                     <img src={brand_10} alt="" className=' flex mx-auto ' />
                                 </div>
                             </div>
-                            <div className='flex gap-12'>
-                                <div className='p-1 rounded-xl bg-purple-50'>
+                            <div className='flex lg:gap-12 gap-2'>
+                                <div className='py-1 lg:px-6 rounded-xl bg-purple-50'>
                                     <img src={brand_7} alt="" className='flex mx-auto ' />
                                 </div>
-                                <div className='p-1 rounded-xl bg-purple-50'>
+                                <a href='https://t.me/gemsbynikisha' className='py-1 lg:px-6 rounded-xl bg-purple-50'>
                                     <img src={brand_8} alt="" className='flex mx-auto ' />
-                                </div>
+                                </a>
                             </div>
-                            <div className='flex items-center justify-center rounded-lg bg-purple-50'>
+                            <div className='flex items-center justify-center py-1 lg:px-6 rounded-lg bg-purple-50'>
                                 <img src={brand_11} alt="" className='flex mx-uto' />
                             </div>
                         </div>
