@@ -19,10 +19,11 @@ export default function Menu() {
 
         <nav>
           <ul className="text-md flex justify-center gap-8 items-center">
-            <li><Link to="/" className="text-zinc-100">Home</Link></li>
-            <li><Link to="/about" className="hover:text-seagreen-100 cursor-pointer">Resources</Link></li>
-            <li><Link to="/destination" className="hover:text-seagreen-100 cursor-pointer">Pricing</Link></li>
-            <li><Link to="/about" className="hover:text-seagreen-100 cursor-pointer">About Us</Link></li>
+            <li><a href="/" className="text-zinc-100">Home</a></li>
+            <li><a href="#nft" className="hover:text-seagreen-100 cursor-pointer">NFT 's</a></li>
+            <li><a href="#tokenommics" className="hover:text-seagreen-100 cursor-pointer">Tokenomics</a></li>
+            <li><a href="#roadmap" className="hover:text-seagreen-100 cursor-pointer">Roadmap</a></li>
+            <li><a href="#about" className="hover:text-seagreen-100 cursor-pointer">About Us</a></li>
           </ul>
         </nav>
       </div>
@@ -53,16 +54,19 @@ export default function Menu() {
           </a>
         </div>
         <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md transition duration-500 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
-          <Link to="/" className="text-lg ml-4 hover:text-purple-100 font-semibold">Home</Link>
+          <a href="/" className="text-lg ml-4 hover:text-purple-100 font-semibold">Home</a>
         </button>
         <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
-          <Link to="/" className="text-lg ml-4 hover:text-purple-100 font-semibold">About</Link>
+          <a href="#nft" className="text-lg ml-4 hover:text-purple-100 font-semibold">NFT 's</a>
         </button>
         <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
-          <Link to="/" className="text-lg ml-4 hover:text-purple-100 font-semibold">Destination</Link>
+          <a href="#tokenomics" className="text-lg ml-4 hover:text-purple-100 font-semibold">Tokenomics</a>
         </button>
         <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
-          <Link to="/" className="text-lg ml-4 hover:text-purple-100 font-semibold">Service</Link>
+          <a href="#roadmap" className="text-lg ml-4 hover:text-purple-100 font-semibold">Roadmap</a>
+        </button>
+        <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
+          <a href="#about" className="text-lg ml-4 hover:text-purple-100 font-semibold">About Us</a>
         </button>
       </div> : null
       }

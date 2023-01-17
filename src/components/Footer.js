@@ -14,21 +14,21 @@ export default function Footer() {
           <div className="md:col-span-2 col-span-1">
 
             <a href="/" className="logo lg:my-12">
-              <h2 className='color-gradient md:text-5xl text-3xl font-orbitron font-semibold'>
+              <h2 className='color-gradient md:text-5xl text-3xl font-orbitron items-center font-semibold'>
                 Meta Genesis
               </h2>
             </a>
-            <p className='py-5 leading-loose'>Adipiscing at in tellus integer. Pellentesque massa placerat duis ultricies lacus. Nisi porta lorem mollis aliquam ut porttitor</p>
+            <p className='py-5 leading-loose text-white-50'>Lets Explore and create your experience with<br></br>
+              Metaverse</p>
 
           </div>
 
           <div className="col-span-1">
-            <h4 className="text-white-100 text-xl pb-5 font-bold font-orbitron">
+            {/* <h4 className="text-white-100 text-xl pb-5 font-bold font-orbitron">
               About Us
-            </h4>
+            </h4> */}
             <ul>
               <li className='pb-3'>About</li>
-              <li className='pb-3'>Contact</li>
               <li className='pb-3'>Partners</li>
               <li className='pb-3'>Tokenomics</li>
               <li className='pb-3'>Roadmap</li>
@@ -36,9 +36,9 @@ export default function Footer() {
           </div>
 
           <div className="col-span-1">
-            <h4 className="text-white-100 text-xl pb-5 font-bold font-orbitron">
+            {/* <h4 className="text-white-100 text-xl pb-5 font-bold font-orbitron">
               Services
-            </h4>
+            </h4> */}
             <ul>
               <li className='pb-3'>NFT Marketplace</li>
               <li className='pb-3'>Roadmap</li>
@@ -64,7 +64,7 @@ export default function Footer() {
                 <img src={telegram} alt="Telegram" />
               </a>
             </div>
-            <p>{new Date().getFullYear()} MetaV.com. All rights reserved.</p>
+            <p>{new Date().getFullYear()} © Metagenesistoken.com All rights reserved.</p>
           </div>
         </div>
       </footer>
