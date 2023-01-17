@@ -529,7 +529,7 @@ export default function Home() {
                         PARTNERS & SUPPORTERS
                     </h2>
 
-                    <div data-aos="zoom-out" className="flex gap-6 items-center justify-center py-12">
+                    <div data-aos="zoom-out" className="lg:flex gap-6 items-center justify-center py-12">
 
                         <div className="flex flex-col gap-y-5">
                             <div className='p-2 rounded-xl bg-purple-50'>
@@ -565,7 +565,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className='flex gap-12'>
-                                <div className='p-2 rounded-xl bg-purple-50 w-1/3'>
+                                <div className='p-2 rounded-xl bg-purple-50 sm:w-1/3'>
                                     <img src={brand_7} alt="" className='flex mx-auto ' />
                                 </div>
                                 <div className='p-1.5 rounded-xl bg-purple-50'>
