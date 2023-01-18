@@ -709,7 +709,7 @@ export default function Home() {
                                     <img src={brand_8} alt="" className='flex mx-auto ' />
                                 </a>
                             </div>
-                            <a href='' className='flex items-center justify-center py-1 lg:px-6 rounded-lg bg-purple-50'>
+                            <a href='/' className='flex items-center justify-center py-1 lg:px-6 rounded-lg bg-purple-50'>
                                 <img src={brand_11} alt="" className='flex mx-uto' />
                             </a>
                         </div>
