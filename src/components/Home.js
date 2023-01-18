@@ -476,7 +476,7 @@ export default function Home() {
                                         Website 2.0 Release
                                     </li>
                                     <li>
-                                        Further Tier-1 Exchange Listing - Certik Audit
+                                        Further Tier-1 Exchange Listing
                                     </li>
                                     <li>
                                         Certik Audit
