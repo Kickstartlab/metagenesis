@@ -17,7 +17,7 @@ function ProgressBar() {
             }
 
             if (percentage4 < 20) {
-                setPercentage4(percentage4 + 1);
+                setPercentage4(percentage4 + 2);
             }
 
             if (percentage2 < 30) {
