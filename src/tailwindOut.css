@@ -711,17 +711,17 @@ video {
 .pb-12{
   padding-bottom: 3rem;
 }
-.pt-8{
-  padding-top: 2rem;
-}
-.pb-6{
-  padding-bottom: 1.5rem;
-}
 .pt-3{
   padding-top: 0.75rem;
 }
 .pt-2{
   padding-top: 0.5rem;
+}
+.pt-8{
+  padding-top: 2rem;
+}
+.pb-6{
+  padding-bottom: 1.5rem;
 }
 .text-center{
   text-align: center;
@@ -797,12 +797,6 @@ video {
 .hover\:text-purple-100:hover{
   --tw-text-opacity: 1;
   color: rgb(209 14 209 / var(--tw-text-opacity));
-}
-@media (min-width: 640px){
-  .sm\:px-5{
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
 }
 @media (min-width: 768px){
   .md\:col-span-2{
