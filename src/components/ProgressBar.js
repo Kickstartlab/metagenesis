@@ -3,6 +3,7 @@ import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 function ProgressBar() {
+
     const [percentage, setPercentage] = useState(0);
     const [percentage4, setPercentage4] = useState(0);
     const [percentage2, setPercentage2] = useState(0);
@@ -27,7 +28,7 @@ function ProgressBar() {
                 setPercentage3(percentage3 + 1);
             }
         }, 50);
-    }, [percentage]);
+    }, [percentage])
 
     return (
         <div>
@@ -67,7 +68,7 @@ function ProgressBar() {
                 </div>
             </div >
 
-            <div style={{ color: "#fff", textAlign: "center", display: "flex", alignItems: "baseline", justifyContent: "center", columnGap: "50px", marginTop: "60px", rowGap: "30px", flexWrap: "wrap"}}>
+            <div style={{ color: "#fff", textAlign: "center", display: "flex", alignItems: "baseline", justifyContent: "center", columnGap: "50px", marginTop: "60px", rowGap: "30px", flexWrap: "wrap" }}>
                 <div style={{ width: 150, display: "flex", flexDirection: "column", alignItems: "center", rowGap: "25px", }}>
                     <CircularProgressbar value={percentage} text={`${percentage}%`} styles={buildStyles({
                         textColor: '#fff',

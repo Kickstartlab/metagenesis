@@ -31,6 +31,10 @@ import ProgressBar from './ProgressBar';
 
 export default function Home() {
 
+    // const vidRef = useRef();
+
+    // useEffect(() => { vidRef.current.play(); }, []);
+
     useEffect(() => {
         Aos.init({
             duration: 3000,
@@ -81,7 +85,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <video data-aos="zoom-out" width="1440" height="654" controls className="flex mx-auto my-8"><source src={video} type="video/mp4" />Error Message</video>
+            <video data-aos="zoom-out" width="1440" height="654" controls autoPlay muted className="flex mx-auto my-8"><source src={video} type="video/mp4" />Error Message</video>
 
             {/* what is meta genesis */}
 
@@ -250,7 +254,7 @@ export default function Home() {
                         <Slider />
                     </div>
 
-                    <video data-aos="zoom-out" width="1297" height="654" controls className="rounded-2xl my-8"><source src={video} type="video/mp4" />Error Message</video>
+                    <video data-aos="zoom-out" width="1297" height="654" controls autoPlay muted className="rounded-2xl my-8"><source src={video} type="video/mp4" />Error Message</video>
                 </div>
 
             </div>
@@ -342,14 +346,9 @@ export default function Home() {
                     <div className="lg:px-16 lg:py-12 py-5 px-5 container mx-auto">
 
                         <div data-aos="slide-top" className='text-white-100 text-center flex flex-col items-center justify-center mx-auto'>
-                            <h2 data-aos="slide-top" className='color-gradient md:text-6xl text-3xl font-orbitron font-semibold'>
+                            <h2 data-aos="slide-top" className='color-gradient pb-8666 md:text-6xl text-3xl font-orbitron font-semibold'>
                                 TOKEN DISTRIBUTION
                             </h2>
-
-                            <p data-aos="slide-bottom" className='py-6 font-poppins lg:w-1/2 w-full text-white-50'>
-                                Public Sale tokens : 30% | Liquidity: 20% | Staking Reserve: 10%
-                                CEX Reserve: 10% | Reward Reserve: 5% | Development Reserve: 5% | Initial Burn: 20%
-                            </p>
 
                         </div>
 
@@ -643,34 +642,34 @@ export default function Home() {
                             <a href='https://www.coingecko.com/' className='rounded-xl bg-purple-50 py-2 lg:px-6'>
                                 <img src={brand_4} alt="" className='flex mx-auto' />
                             </a>
-                            <a href='' className='py-2 rounded-xl bg-purple-50 lg:px-6'>
+                            <a href='https://www.dextools.io/app/' className='py-2 rounded-xl bg-purple-50 lg:px-6'>
                                 <img src={brand_5} alt="" className='flex mx-auto' />
                             </a>
-                            <a href='' className='py-2 rounded-xl bg-purple-50 lg:px-6'>
+                            <a href='https://poocoin.app/' className='py-2 rounded-xl bg-purple-50 lg:px-6'>
                                 <img src={brand_6} alt="" className='flex mx-auto' />
                             </a>
                         </div>
 
                         <div className="flex flex-col gap-5">
                             <div className='flex lg:gap-12 gap-2'>
-                                <div className='py-1 lg:px-6 rounded-xl bg-purple-50'>
+                                <a href='https://www.dexview.com/' className='py-1 lg:px-6 rounded-xl bg-purple-50'>
                                     <img src={brand_9} alt="" className='flex mx-auto' />
-                                </div>
-                                <div className='py-1 lg:px-6 rounded-xl bg-purple-50'>
+                                </a>
+                                <a href='https://pancakeswap.finance/' className='py-1 lg:px-6 rounded-xl bg-purple-50'>
                                     <img src={brand_10} alt="" className=' flex mx-auto ' />
-                                </div>
+                                </a>
                             </div>
                             <div className='flex lg:gap-12 gap-2'>
-                                <div className='py-1 lg:px-6 rounded-xl bg-purple-50'>
+                                <a href='https://coinmarketcap.com/' className='py-1 lg:px-6 rounded-xl bg-purple-50'>
                                     <img src={brand_7} alt="" className='flex mx-auto ' />
-                                </div>
+                                </a>
                                 <a href='https://t.me/gemsbynikisha' className='py-1 lg:px-6 rounded-xl bg-purple-50'>
                                     <img src={brand_8} alt="" className='flex mx-auto ' />
                                 </a>
                             </div>
-                            <div className='flex items-center justify-center py-1 lg:px-6 rounded-lg bg-purple-50'>
+                            <a href='' className='flex items-center justify-center py-1 lg:px-6 rounded-lg bg-purple-50'>
                                 <img src={brand_11} alt="" className='flex mx-uto' />
-                            </div>
+                            </a>
                         </div>
 
                     </div>
