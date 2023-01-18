@@ -19,6 +19,12 @@ import brand_8 from '../assets/brand-8.png';
 import brand_9 from '../assets/brand-9.png';
 import brand_10 from '../assets/brand-10.png';
 import brand_11 from '../assets/brand-11.png';
+import token_1 from '../assets/token-1.png';
+import token_2 from '../assets/token-2.png';
+import token_3 from '../assets/token-3.png';
+import token_4 from '../assets/token-4.png';
+import token_5 from '../assets/token-5.png';
+import token_6 from '../assets/token-6.png';
 import lock from '../assets/lock.png';
 import video from '../assets/video.mp4';
 import roadmap from '../assets/roadmap.png';
@@ -292,26 +298,30 @@ export default function Home() {
                                 </h2>
 
                                 <p className='pt-6 font-poppins text-white-50'>
-                                    $MGENESIS is the primary native token of MetaGenesis, which empowers the entire metaverse ecosystem.
+                                    <span className="text-purple-100 font-bold"> $MGENESIS</span> is the primary native token of MetaGenesis, which empowers the entire metaverse ecosystem.
                                 </p>
 
                                 <p className='pt-3 font-poppins text-white-50'>
-                                    MGEN chain: The blockchain network which realizes robust infrastructure for the Metaverse.
+                                    <span className="text-purple-100 font-bold">MGEN chain: </span> The blockchain network which realizes robust infrastructure for the Metaverse.
                                 </p>
                                 <p className='pt-2 font-poppins text-white-50'>
-                                    MGEN Metaverse app: Universal device-ready Metaverse app optimized for smartphones.
+                                    <span className="text-purple-100 font-bold">MGEN Metaverse app: </span> Universal device-ready Metaverse app optimized for smartphones.
                                 </p>
                                 <p className='pt-2 font-poppins text-white-50'>
-                                    $MGENESIS token: The eco-stream for this entire Metaverse ecosystem.
+                                    <span className="text-purple-100 font-bold">$MGENESIS token: </span>
+                                    The eco-stream for this entire Metaverse ecosystem.
                                 </p>
                                 <p className='pt-2 font-poppins text-white-50'>
-                                    MGEN NFTs: Marketplace, to buy and sell your NFTs.
+                                    <span className="text-purple-100 font-bold"> MGEN NFTs: </span>
+                                    Marketplace, to buy and sell your NFTs.
                                 </p>
                                 <p className='pt-2 font-poppins text-white-50'>
-                                    MGEN App: The mobile asset management app which also can be your Metaverse wallet.
+                                    <span className="text-purple-100 font-bold"> MGEN App: </span>
+                                    The mobile asset management app which also can be your Metaverse wallet.
                                 </p>
                                 <p className='pt-2 font-poppins text-white-50'>
-                                    MGEN Builder: The builder for the Avatar, World and Games to build anything in Metaverse with no coding knowledge.
+                                    <span className="text-purple-100 font-bold">MGEN Builder: </span>
+                                    The builder for the Avatar, World and Games to build anything in Metaverse with no coding knowledge.
                                 </p>
 
                             </div>
@@ -330,22 +340,62 @@ export default function Home() {
             <div id='tokenomics' className="bg-side">
                 <div className="lg:px-16 lg:py-12 py-5 px-5 container mx-auto">
 
-                    <div className='text-white-100 lg:w-8/12 w-full text-center flex flex-col items-center justify-center mx-auto'>
+                    <div className='text-white-100 lg:w-10/12 w-full flex flex-col items-center justify-center mx-auto'>
                         <h2 data-aos="fade-down" className='color-gradient md:text-6xl text-3xl font-orbitron font-semibold'>
                             TOKENOMICS
                         </h2>
 
-                        <p data-aos="fade-up" className='py-6 font-poppins text-white-50'>
-                            MetaGenesis is aspire to be the most successful project of 2023. Our Tokenomics have been designed to support sustainable growth and development of the project.
+                        <p data-aos="fade-up" className='py-8 font-poppins text-white-50 text-center '>
+                            MetaGenesis is aspire to be the most successful project of 2023. Our Tokenomics have been<br></br> designed to support sustainable growth and development of the project.
                         </p>
 
-                        <p data-aos="zoom-out text-white-50" className='py-6 font-poppins'>
-                            Token name: MetaGenesis | Ticker Symbol: $MGENESIS<br></br>
-                            Blockchain: Binance Smart Chain (BEP-20)<br></br>
-                            Total Supply: 100 Million (100,000,000)<br></br>
-                            Total fees: 1%<br></br>
-                            Marketing: 1%
-                        </p>
+                        <div className="lg:flex block items-center py-5 justify-center gap-16">
+
+                            <div className="flex flex-col gap-y-6">
+
+                                <div className="flex gap-3 items-center">
+                                    <img src={token_1} alt="" />
+                                    <p className='font-poppins text-white-50'>
+                                        Token name: MetaGenesis
+                                    </p>
+                                </div>
+                                <div className="flex gap-3 items-center">
+                                    <img src={token_2} alt="" />
+                                    <p className='font-poppins text-white-50'>
+                                        Ticker Symbol: $MGENESIS
+
+                                    </p>
+                                </div>
+                                <div className="flex gap-3 items-center">
+                                    <img src={token_3} alt="" />
+                                    <p className='font-poppins text-white-50'>
+                                        Blockchain: Binance Smart Chain
+                                        (BEP-20)
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="flex flex-col gap-y-6 lg:mt-0 mt-6">
+                                <div className="flex gap-3 items-center">
+                                    <img src={token_4} alt="" />
+                                    <p className='font-poppins text-white-50'>
+                                        Total Supply: 100 Million (100,000,000)
+                                    </p>
+                                </div>
+                                <div className="flex gap-3 items-center">
+                                    <img src={token_5} alt="" />
+                                    <p className='font-poppins text-white-50'>
+                                        Total fees: 1%
+                                    </p>
+                                </div>
+                                <div className="flex gap-3 items-center">
+                                    <img src={token_6} alt="" />
+                                    <p className='font-poppins text-white-50'>
+                                        Marketing: 1%
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
 
@@ -432,7 +482,7 @@ export default function Home() {
 
                     <div className="lg:block hidden">
 
-                        <div className="lg:flex gap-24 py-12 lg:px-24 px-5">
+                        <div className="lg:flex gap-32 py-12 lg:px-24 px-5">
 
                             <div data-aos="fade-up" className="text-white-100">
                                 <h5 className="text-xl font-orbitron font-semibold">
@@ -693,20 +743,22 @@ export default function Home() {
                         </div>
 
                         <div className="flex flex-col gap-5">
-                            <div className='flex lg:gap-12 gap-2'>
-                                <a href='https://www.dexview.com/' className='py-1 lg:px-6 rounded-xl bg-purple-50'>
-                                    <img src={brand_9} alt="" className='flex mx-auto' />
-                                </a>
-                                <a href='https://pancakeswap.finance/' className='py-1 lg:px-6 rounded-xl bg-purple-50'>
-                                    <img src={brand_10} alt="" className=' flex mx-auto ' />
-                                </a>
-                            </div>
-                            <div className='flex lg:gap-12 gap-2'>
+                            <div className='flex lg:gap-16 gap-2'>
                                 <a href='https://coinmarketcap.com/' className='py-1 lg:px-6 rounded-xl bg-purple-50'>
                                     <img src={brand_7} alt="" className='flex mx-auto ' />
                                 </a>
+                                <a href='https://www.dexview.com/' className='py-1 lg:px-6 rounded-xl bg-purple-50'>
+                                    <img src={brand_9} alt="" className='flex mx-auto' />
+                                </a>
+
+                            </div>
+                            <div className='flex lg:gap-16 gap-2'>
+
                                 <a href='https://t.me/gemsbynikisha' className='py-1 lg:px-6 rounded-xl bg-purple-50'>
                                     <img src={brand_8} alt="" className='flex mx-auto ' />
+                                </a>
+                                <a href='https://pancakeswap.finance/' className='py-1 lg:px-6 rounded-xl bg-purple-50'>
+                                    <img src={brand_10} alt="" className=' flex mx-auto ' />
                                 </a>
                             </div>
                             <a href='/' className='flex items-center justify-center py-1 lg:px-6 rounded-lg bg-purple-50'>
