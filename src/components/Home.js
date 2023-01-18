@@ -274,7 +274,7 @@ export default function Home() {
                             </h2>
 
                             <p className='py-8 font-poppins lg:text-right text-white-50'>
-                                a blockchain infrastructure and robust DApps platform custom-built for the Metaverse. Broadly Adopted by major institutions, local governments, and global brands.
+                                $MGenesis Chain will be a EVM Based custom-built blockchain for the Metaverse. It offers blazing speed, impressively low cost, and superior features optimized for anyone to build the Metaverse ecosystem.
                             </p>
 
                         </div>
@@ -295,10 +295,22 @@ export default function Home() {
                                     $MGENESIS is the primary native token of MetaGenesis, which empowers the entire metaverse ecosystem.
                                 </p>
 
-                                <p className='py-6 font-poppins text-white-50'>
-                                    MGEN chain: The blockchain network which realizes robust infrastructure for the Metaverse. MGEN Metaverse app: Universal device-ready Metaverse app optimized for smartphones. $MGENESIS token: The eco-stream for this entire Metaverse ecosystem.<br></br>
-                                    MGEN: Marketplace, to buy and sell your NFTs.
+                                <p className='pt-3 font-poppins text-white-50'>
+                                    MGEN chain: The blockchain network which realizes robust infrastructure for the Metaverse.
+                                </p>
+                                <p className='pt-2 font-poppins text-white-50'>
+                                    MGEN Metaverse app: Universal device-ready Metaverse app optimized for smartphones.
+                                </p>
+                                <p className='pt-2 font-poppins text-white-50'>
+                                    $MGENESIS token: The eco-stream for this entire Metaverse ecosystem.
+                                </p>
+                                <p className='pt-2 font-poppins text-white-50'>
+                                    MGEN NFTs: Marketplace, to buy and sell your NFTs.
+                                </p>
+                                <p className='pt-2 font-poppins text-white-50'>
                                     MGEN App: The mobile asset management app which also can be your Metaverse wallet.
+                                </p>
+                                <p className='pt-2 font-poppins text-white-50'>
                                     MGEN Builder: The builder for the Avatar, World and Games to build anything in Metaverse with no coding knowledge.
                                 </p>
 
@@ -387,7 +399,7 @@ export default function Home() {
                                 </p>
 
                                 <div className="button font-poppins">
-                                    <a href="https://docs.pinksale.finance/important/safu-contract](https://docs.pinksale.finance/important/safu-contract">
+                                    <a href="https://docs.pinksale.finance/important/safu-contract">
                                         <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-5 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
                                             SAFU CONTRACT
                                             <span><svg width="12" height="13" viewBox="0 0 12 13" class="mt-1" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -452,7 +464,10 @@ export default function Home() {
                                 <ul className='list-disc font-poppins pt-3'>
 
                                     <li>
-                                        V2 Whitepaper Release - Celebrity Partnership
+                                        V2 Whitepaper Release
+                                    </li>
+                                    <li>
+                                        Celebrity Partnership
                                     </li>
                                     <li>
                                         MGEN Builder
@@ -462,6 +477,9 @@ export default function Home() {
                                     </li>
                                     <li>
                                         Further Tier-1 Exchange Listing - Certik Audit
+                                    </li>
+                                    <li>
+                                        Certik Audit
                                     </li>
                                 </ul>
                             </div>
@@ -486,19 +504,25 @@ export default function Home() {
                                         MGEN Metaverse app
                                     </li>
                                     <li>
-                                        Sponsorship and Partnership Worldwide - Celebrity Brand Ambassdors
+                                        Sponsorship and Partnership Worldwide
+                                    </li>
+                                    <li>
+                                        Celebrity Brand Ambassdors
                                     </li>
                                 </ul>
                             </div>
                         </div>
 
-                        <div data-aos="fade-down" className="text-white-100 lg:pt-0 pt-6 sm:px-5">
+                        <div data-aos="fade-down" className="text-white-100 lg:pt-0 pt-6">
                             <h5 className="text-xl font-orbitron font-semibold">
                                 Phase 1
                             </h5>
                             <ul className='list-disc font-poppins pt-3'>
                                 <li>
-                                    Website and Community Building - Pinksale Fair Launch
+                                    Website and Community Building
+                                </li>
+                                <li>
+                                    Pinksale Fair Launch
                                 </li>
                                 <li>
                                     DEX Launching
@@ -507,7 +531,10 @@ export default function Home() {
                                     Global Marketing Campaign
                                 </li>
                                 <li>
-                                    CoinMarketCap & CoinGecko Listing - TechRate/InterFi Contract Audit
+                                    CoinMarketCap & CoinGecko Listing
+                                </li>
+                                <li>
+                                    TechRate/InterFi Contract Audit
                                 </li>
                                 <li>
                                     MGEN NFT Marketplace
@@ -528,7 +555,10 @@ export default function Home() {
                             </h5>
                             <ul className='list-disc font-poppins pt-3'>
                                 <li>
-                                    Website and Community Building - Pinksale Fair Launch
+                                    Website and Community Building
+                                </li>
+                                <li>
+                                    Pinksale Fair Launch
                                 </li>
                                 <li>
                                     DEX Launching
@@ -537,7 +567,10 @@ export default function Home() {
                                     Global Marketing Campaign
                                 </li>
                                 <li>
-                                    CoinMarketCap & CoinGecko Listing - TechRate/InterFi Contract Audit
+                                    CoinMarketCap & CoinGecko Listing
+                                </li>
+                                <li>
+                                    TechRate/InterFi Contract Audit
                                 </li>
                                 <li>
                                     MGEN NFT Marketplace
@@ -578,7 +611,10 @@ export default function Home() {
                             <ul className='list-disc font-poppins pt-3'>
 
                                 <li>
-                                    V2 Whitepaper Release - Celebrity Partnership
+                                    V2 Whitepaper Release
+                                </li>
+                                <li>
+                                    Celebrity Partnership
                                 </li>
                                 <li>
                                     MGEN Builder
@@ -587,7 +623,10 @@ export default function Home() {
                                     Website 2.0 Release
                                 </li>
                                 <li>
-                                    Further Tier-1 Exchange Listing - Certik Audit
+                                    Further Tier-1 Exchange Listing
+                                </li>
+                                <li>
+                                    Certik Audit
                                 </li>
                             </ul>
                         </div>
@@ -604,7 +643,10 @@ export default function Home() {
                                     MGEN Metaverse app
                                 </li>
                                 <li>
-                                    Sponsorship and Partnership Worldwide - Celebrity Brand Ambassdors
+                                    Sponsorship and Partnership Worldwide
+                                </li>
+                                <li>
+                                    Celebrity Brand Ambassdors
                                 </li>
                             </ul>
                         </div>
