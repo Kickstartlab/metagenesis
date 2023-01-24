@@ -564,8 +564,11 @@ video {
 .gap-3{
   gap: 0.75rem;
 }
-.gap-24{
-  gap: 6rem;
+.gap-16{
+  gap: 4rem;
+}
+.gap-32{
+  gap: 8rem;
 }
 .gap-5{
   gap: 1.25rem;
@@ -573,11 +576,11 @@ video {
 .gap-28{
   gap: 7rem;
 }
-.gap-x-3{
-  column-gap: 0.75rem;
-}
 .gap-y-6{
   row-gap: 1.5rem;
+}
+.gap-x-3{
+  column-gap: 0.75rem;
 }
 .overflow-hidden{
   overflow: hidden;
@@ -666,10 +669,6 @@ video {
 .py-0{
   padding-top: 0px;
   padding-bottom: 0px;
-}
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 .py-3{
   padding-top: 0.75rem;
@@ -770,6 +769,10 @@ video {
 .text-white-50{
   color: rgba(255, 255, 255, 0.8);
 }
+.text-purple-100{
+  --tw-text-opacity: 1;
+  color: rgb(209 14 209 / var(--tw-text-opacity));
+}
 .text-purple-200{
   --tw-text-opacity: 1;
   color: rgb(16 163 218 / var(--tw-text-opacity));
@@ -850,14 +853,14 @@ video {
   .lg\:w-5\/12{
     width: 41.666667%;
   }
-  .lg\:w-8\/12{
-    width: 66.666667%;
+  .lg\:w-10\/12{
+    width: 83.333333%;
   }
   .lg\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
-  .lg\:gap-12{
-    gap: 3rem;
+  .lg\:gap-16{
+    gap: 4rem;
   }
   .lg\:px-12{
     padding-left: 3rem;

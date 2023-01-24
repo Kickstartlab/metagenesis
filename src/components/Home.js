@@ -24,7 +24,6 @@ import token_2 from '../assets/token-2.png';
 import token_3 from '../assets/token-3.png';
 import token_4 from '../assets/token-4.png';
 import token_5 from '../assets/token-5.png';
-import token_6 from '../assets/token-6.png';
 import lock from '../assets/lock.png';
 import video from '../assets/video.mp4';
 import roadmap from '../assets/roadmap.png';
@@ -36,10 +35,6 @@ import "aos/dist/aos.css";
 import ProgressBar from './ProgressBar';
 
 export default function Home() {
-
-    // const vidRef = useRef();
-
-    // useEffect(() => { vidRef.current.play(); }, []);
 
     useEffect(() => {
         Aos.init({
@@ -67,15 +62,15 @@ export default function Home() {
                             <p className='pt-6 pb-4 text-white-50 font-poppins'> Let's explore and create your experience with<br></br> Metaverse. </p>
 
                             <div className="flex items-center gap-8 font-poppins">
-                                <a href="https://t.me/MetaGenesisPortal">
+                                <a href="https://www.pinksale.finance/launchpad/0x6952ee261ca75019f540355d0a234f276d5f68fb?chain=BSC">
                                     <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 lg:px-8 px-4 rounded-sm font-semibold mt-5">
-                                        Join us
+                                        Presale
                                     </button>
                                 </a>
 
-                                <a href="/">
+                                <a href="https://t.me/MetaGenesisPortal">
                                     <button className="text-white-100 font-poppins border-gradient py-2 lg:px-8 px-4 font-semibold mt-5 hover:bg-gradient-to-r from-purple-100 to-purple-200">
-                                        Buy Now
+                                        Join Chat
                                     </button>
                                 </a>
                             </div>
@@ -156,9 +151,9 @@ export default function Home() {
                                     </button>
                                 </a>
 
-                                <a href="/">
+                                <a href="https://t.me/MetaGenesisPortal">
                                     <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 flex gap-2 items-center py-2 lg:px-8 px-4 rounded-sm font-semibold mt-5">
-                                        Buy Now
+                                        Join Chat
                                         <span><svg width="12" height="13" viewBox="0 0 12 13" class="mt-1" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2 1.5C2 0.947715 2.44772 0.5 3 0.5L11 0.500001C11.5523 0.500001 12 0.947716 12 1.5V9.5C12 10.0523 11.5523 10.5 11 10.5C10.4477 10.5 10 10.0523 10 9.5V3.91421L1.70711 12.2071C1.31658 12.5976 0.683417 12.5976 0.292893 12.2071C-0.0976311 11.8166 -0.0976311 11.1834 0.292893 10.7929L8.58579 2.5L3 2.5C2.44772 2.5 2 2.05228 2 1.5Z" fill="white"></path>
                                         </svg>
@@ -349,7 +344,7 @@ export default function Home() {
                             MetaGenesis is aspire to be the most successful project of 2023. Our Tokenomics have been<br></br> designed to support sustainable growth and development of the project.
                         </p>
 
-                        <div className="lg:flex block items-center py-5 justify-center gap-16">
+                        <div className="lg:flex block items-baseline py-5 justify-center gap-16">
 
                             <div className="flex flex-col gap-y-6">
 
@@ -385,13 +380,7 @@ export default function Home() {
                                 <div className="flex gap-3 items-center">
                                     <img src={token_5} alt="" />
                                     <p className='font-poppins text-white-50'>
-                                        Total fees: 1%
-                                    </p>
-                                </div>
-                                <div className="flex gap-3 items-center">
-                                    <img src={token_6} alt="" />
-                                    <p className='font-poppins text-white-50'>
-                                        Marketing: 1%
+                                        Total fees: 0%
                                     </p>
                                 </div>
                             </div>
@@ -448,7 +437,7 @@ export default function Home() {
                                     The complete presale follow the SAFU rules set by Pinksale which can be seen here:
                                 </p>
 
-                                <div className="button font-poppins">
+                                <div className="flex gap-6 items-center font-poppins">
                                     <a href="https://docs.pinksale.finance/important/safu-contract">
                                         <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-5 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
                                             SAFU CONTRACT
@@ -457,6 +446,17 @@ export default function Home() {
                                             </svg>
                                             </span>
                                         </button>
+                                    </a>
+
+                                    <a href='https://pinksale.notion.site/MetaGenesis-KYC-Verification-b0038207f88e40458a7ea629f0679da4-'>
+                                        <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 px-5 flex gap-x-3 items-center rounded-sm font-semibold mt-5">
+                                            KYC
+                                            <span><svg width="12" height="13" viewBox="0 0 12 13" class="mt-1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 1.5C2 0.947715 2.44772 0.5 3 0.5L11 0.500001C11.5523 0.500001 12 0.947716 12 1.5V9.5C12 10.0523 11.5523 10.5 11 10.5C10.4477 10.5 10 10.0523 10 9.5V3.91421L1.70711 12.2071C1.31658 12.5976 0.683417 12.5976 0.292893 12.2071C-0.0976311 11.8166 -0.0976311 11.1834 0.292893 10.7929L8.58579 2.5L3 2.5C2.44772 2.5 2 2.05228 2 1.5Z" fill="#fff"></path>
+                                            </svg>
+                                            </span>
+                                        </button>
+
                                     </a>
                                 </div>
                             </div>

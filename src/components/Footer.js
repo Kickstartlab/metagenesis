@@ -5,7 +5,6 @@ import telegram from '../assets/telegram.png';
 
 
 
-
 export default function Footer() {
   return (
     <div className="bg-blue-100">
@@ -24,9 +23,6 @@ export default function Footer() {
           </div>
 
           <div className="col-span-1">
-            {/* <h4 className="text-white-100 text-xl pb-5 font-bold font-orbitron">
-              About Us
-            </h4> */}
             <ul>
               <a href="#about"><li className='pb-3'>About</li></a>
               <a href="#partners"><li className='pb-3'>Partners</li></a>
@@ -36,9 +32,6 @@ export default function Footer() {
           </div>
 
           <div className="col-span-1">
-            {/* <h4 className="text-white-100 text-xl pb-5 font-bold font-orbitron">
-              Services
-            </h4> */}
             <ul>
               <a href="#nft"><li className='pb-3'>NFT Marketplace</li></a>
               <a href="#roadmap"><li className='pb-3'>Roadmap</li></a>
@@ -52,7 +45,7 @@ export default function Footer() {
               Contact
             </h4>
             <div className="flex gap-6 pb-5">
-              <a href="">
+              <a href="https://twitter.com/MetaGenesisCoin">
                 <img src={twitter} alt="Twitter" />
               </a>
 
@@ -60,8 +53,12 @@ export default function Footer() {
                 <img src={telegram} alt="Telegram" />
               </a>
 
-              <a href="">
+              <a href="https://discord.gg/s3YswSwqNu">
                 <img src={discord} alt="Discord" />
+              </a>
+
+              <a href="mailto:Team@metagenesis.com">
+                <i className="fa fa-envelope text-2xl text-white-100" aria-hidden="true"></i>
               </a>
             </div>
             <p>{new Date().getFullYear()} © Metagenesistoken.com All rights reserved.</p>
