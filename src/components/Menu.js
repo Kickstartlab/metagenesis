@@ -28,8 +28,8 @@ export default function Menu() {
               {
                 show2 ?
                   <span className="cursor-pointer flex flex-col gap-3 p-2 mt-2 absolute bg-blue-100">
-                    <a href="/">Mint-NFT</a>
-                    <a href="/">Stake Token</a>
+                    <a href="https://mint-nft.metagenesistoken.com/">Mint-NFT</a>
+                    <a href="https://staking.metagenesistoken.com/">Stake Token</a>
                   </span> : null}
             </li>
           </ul>
@@ -75,14 +75,14 @@ export default function Menu() {
             <a href="#roadmap" className="text-lg ml-4 hover:text-purple-100 font-semibold">Roadmap</a>
           </button>
           <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 hover:text-purple-100  text-white-100">
-            <a href="#about" className="text-lg ml-4 hover:text-purple-100 font-semibold">About Us</a>
+            <a href="#about" className="text-lg ml-4 hover:text-purple-100 font-semibold">Ecosystem</a>
           </button>
           <button onClick={() => setShow2(!show2)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 hover:text-purple-100 pl-4 text-white-100">DApp</button>
           {
             show2 ?
               <span className="cursor-pointer flex flex-col gap-3 p-2 mt-2 absolute text-white-100 text-left ">
-                <a href="/">Mint-NFT</a>
-                <a href="/">Stake Token</a>
+                <a href="https://mint-nft.metagenesistoken.com/">Mint-NFT</a>
+                <a href="https://staking.metagenesistoken.com/">Stake Token</a>
               </span> : null}
         </div> : null
       }
