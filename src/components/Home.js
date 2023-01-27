@@ -64,7 +64,7 @@ export default function Home() {
                             <div className="flex items-center gap-8 font-poppins">
                                 <a href="https://www.pinksale.finance/launchpad/0x6952ee261ca75019f540355d0a234f276d5f68fb?chain=BSC">
                                     <button className="text-white-100 font-poppins bg-gradient-to-r from-purple-100 to-purple-200 py-2 lg:px-8 px-4 rounded-sm font-semibold mt-5">
-                                        Presale
+                                        Chart
                                     </button>
                                 </a>
 
